@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Soft, healing color palette for NGO */
+    --background: 40 33% 98%;
+    --foreground: 210 29% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 29% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 29% 20%;
+
+    /* Primary: Healing Teal */
+    --primary: 174 42% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Warm Amber */
+    --secondary: 38 70% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted: Soft gray-green */
+    --muted: 160 20% 95%;
+    --muted-foreground: 210 15% 45%;
+
+    /* Accent: Soft sage */
+    --accent: 160 30% 90%;
+    --accent-foreground: 174 42% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 160 20% 88%;
+    --input: 160 20% 88%;
+    --ring: 174 42% 40%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(174 42% 35%) 0%, hsl(160 35% 45%) 50%, hsl(38 50% 55%) 100%);
+    --card-shadow: 0 4px 20px -4px hsl(174 42% 40% / 0.15);
+    --card-shadow-hover: 0 8px 30px -4px hsl(174 42% 40% / 0.25);
+    --text-gradient: linear-gradient(135deg, hsl(174 42% 35%) 0%, hsl(38 70% 50%) 100%);
+    
+    /* Sidebar tokens */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 174 42% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 30% 94%;
+    --sidebar-accent-foreground: 174 42% 30%;
+    --sidebar-border: 160 20% 88%;
+    --sidebar-ring: 174 42% 40%;
+  }
+
+  .dark {
+    --background: 210 29% 12%;
+    --foreground: 40 33% 96%;
+
+    --card: 210 25% 16%;
+    --card-foreground: 40 33% 96%;
+
+    --popover: 210 25% 16%;
+    --popover-foreground: 40 33% 96%;
+
+    --primary: 174 50% 50%;
+    --primary-foreground: 210 29% 10%;
+
+    --secondary: 38 60% 50%;
+    --secondary-foreground: 210 29% 10%;
+
+    --muted: 210 20% 20%;
+    --muted-foreground: 160 15% 65%;
+
+    --accent: 174 30% 25%;
+    --accent-foreground: 174 50% 70%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 25%;
+    --input: 210 20% 25%;
+    --ring: 174 50% 50%;
+
+    --sidebar-background: 210 25% 14%;
+    --sidebar-foreground: 40 33% 96%;
+    --sidebar-primary: 174 50% 50%;
+    --sidebar-primary-foreground: 210 29% 10%;
+    --sidebar-accent: 174 30% 22%;
+    --sidebar-accent-foreground: 174 50% 70%;
+    --sidebar-border: 210 20% 25%;
+    --sidebar-ring: 174 50% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+
+  .card-elevated {
+    box-shadow: var(--card-shadow);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card-elevated:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-4px);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-delay-1 {
+    animation: fadeIn 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-delay-2 {
+    animation: fadeIn 0.6s ease-out 0.4s forwards;
+    opacity: 0;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
