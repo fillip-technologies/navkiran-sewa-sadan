@@ -103,7 +103,7 @@ const AdultHomeCare = () => {
         <div className="absolute inset-0">
           <img
             src={adultCareImage}
-            alt="Adult Home Care - Compassionate Care Services"
+            alt="Old Age Home Care - Compassionate Care Services"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/50" />
@@ -117,10 +117,10 @@ const AdultHomeCare = () => {
               </span>
             </div>
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Adult Home Care
+              Old Age Home Care
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Our adult care services provide a warm, supportive living
+              Our old age care services provide a warm, supportive living
               environment for individuals who need assistance with daily
               activities. We focus on maintaining dignity, comfort, and quality
               of life while ensuring safety and compassionate care.
@@ -227,7 +227,7 @@ const AdultHomeCare = () => {
                 Care for Those Who Need It Most
               </h2>
               <p className="text-muted-foreground mb-8">
-                Our adult home care services are designed for individuals who
+                Our old age home care services are designed for individuals who
                 need assistance with daily living but deserve to maintain their
                 dignity and quality of life.
               </p>
@@ -297,7 +297,7 @@ const AdultHomeCare = () => {
               Give Your Loved Ones the Care They Deserve
             </h2>
             <p className="text-primary-foreground/80 mb-8">
-              Contact us to learn more about our adult home care services and
+              Contact us to learn more about our old age home care services and
               how we can support your family.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

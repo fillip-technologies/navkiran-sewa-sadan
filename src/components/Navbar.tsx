@@ -22,13 +22,17 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full hero-gradient flex items-center justify-center">
-              <span className="text-primary-foreground font-serif font-bold text-lg">N</span>
+              <span className="text-primary-foreground font-serif font-bold text-lg">
+                N
+              </span>
             </div>
             <div className="hidden sm:block">
               <h1 className="font-serif font-semibold text-lg text-foreground leading-tight">
                 Navkiran Sewa Sadan
               </h1>
-              <p className="text-xs text-muted-foreground">Restoring Hope, Healing Lives</p>
+              <p className="text-xs text-muted-foreground">
+                Restoring Hope, Healing Lives
+              </p>
             </div>
           </Link>
 
@@ -49,13 +53,16 @@ const Navbar = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="center" className="w-56">
                 <DropdownMenuItem asChild>
-                  <Link to="/nasha-mukti-kendra" className="w-full cursor-pointer">
+                  <Link
+                    to="/nasha-mukti-kendra"
+                    className="w-full cursor-pointer"
+                  >
                     Nasha Mukti Kendra
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/adult-home-care" className="w-full cursor-pointer">
-                    Adult Home Care
+                    Old Age Home Care
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -70,7 +77,11 @@ const Navbar = () => {
               About Us
             </Link>
 
-            <Button size="sm" className="bg-primary hover:bg-primary/90" asChild>
+            <Button
+              size="sm"
+              className="bg-primary hover:bg-primary/90"
+              asChild
+            >
               <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
@@ -98,12 +109,16 @@ const Navbar = () => {
                 Home
               </Link>
               <div className="pl-4 flex flex-col gap-2">
-                <p className="text-xs text-muted-foreground uppercase tracking-wide">Services</p>
+                <p className="text-xs text-muted-foreground uppercase tracking-wide">
+                  Services
+                </p>
                 <Link
                   to="/nasha-mukti-kendra"
                   onClick={() => setIsOpen(false)}
                   className={`text-sm font-medium transition-colors hover:text-primary ${
-                    isActive("/nasha-mukti-kendra") ? "text-primary" : "text-foreground"
+                    isActive("/nasha-mukti-kendra")
+                      ? "text-primary"
+                      : "text-foreground"
                   }`}
                 >
                   Nasha Mukti Kendra
@@ -112,10 +127,12 @@ const Navbar = () => {
                   to="/adult-home-care"
                   onClick={() => setIsOpen(false)}
                   className={`text-sm font-medium transition-colors hover:text-primary ${
-                    isActive("/adult-home-care") ? "text-primary" : "text-foreground"
+                    isActive("/adult-home-care")
+                      ? "text-primary"
+                      : "text-foreground"
                   }`}
                 >
-                  Adult Home Care
+                  Old Age Home Care
                 </Link>
               </div>
               <Link
@@ -127,7 +144,11 @@ const Navbar = () => {
               >
                 About Us
               </Link>
-              <Button size="sm" className="w-fit bg-primary hover:bg-primary/90" asChild>
+              <Button
+                size="sm"
+                className="w-fit bg-primary hover:bg-primary/90"
+                asChild
+              >
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
                   Contact Us
                 </Link>

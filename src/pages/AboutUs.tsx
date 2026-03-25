@@ -155,7 +155,7 @@ const AboutUs = () => {
               <p>
                 What started as a small initiative has grown into a
                 comprehensive care organization offering de-addiction
-                rehabilitation and adult home care services. Throughout our
+                rehabilitation and old age home care services. Throughout our
                 journey, we have touched the lives of over 500 individuals and
                 their families.
               </p>

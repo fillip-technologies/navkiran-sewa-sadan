@@ -93,7 +93,7 @@ const Footer = () => {
                   to="/adult-home-care"
                   className="text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  Adult Home Care
+                  Old Age Home Care
                 </Link>
               </li>
               <li>

@@ -18,7 +18,7 @@ const ServicesSection = () => {
       ],
     },
     {
-      title: "Adult Home Care",
+      title: "Old Age Home Care",
       description:
         "Our adult care services provide a safe, supportive living environment for individuals who need assistance with daily activities. We focus on maintaining dignity, comfort, and quality of life.",
       icon: Home,
