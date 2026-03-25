@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/context/LanguageContext";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,6 +13,32 @@ import {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { language, toggleLanguage, otherLanguageLabel } = useLanguage();
+
+  const content =
+    language === "en"
+      ? {
+          brand: "Navkiran Sewa Sadan",
+          tagline: "Restoring Hope, Healing Lives",
+          home: "Home",
+          services: "Services",
+          nashaMuktiKendra: "Nasha Mukti Kendra",
+          adultHomeCare: "Old Age Home Care",
+          about: "About Us",
+          contact: "Contact Us",
+          switchLanguage: "Switch website language",
+        }
+      : {
+          brand: "नवकिरण सेवा सदन",
+          tagline: "उम्मीद लौटाएं, जीवन संवारें",
+          home: "होम",
+          services: "सेवाएं",
+          nashaMuktiKendra: "नशा मुक्ति केंद्र",
+          adultHomeCare: "बुजुर्ग देखभाल सेवा",
+          about: "हमारे बारे में",
+          contact: "संपर्क करें",
+          switchLanguage: "वेबसाइट की भाषा बदलें",
+        };
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -28,11 +55,9 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:block">
               <h1 className="font-serif font-semibold text-lg text-foreground leading-tight">
-                Navkiran Sewa Sadan
+                {content.brand}
               </h1>
-              <p className="text-xs text-muted-foreground">
-                Restoring Hope, Healing Lives
-              </p>
+              <p className="text-xs text-muted-foreground">{content.tagline}</p>
             </div>
           </Link>
 
@@ -44,12 +69,12 @@ const Navbar = () => {
                 isActive("/") ? "text-primary" : "text-foreground"
               }`}
             >
-              Home
+              {content.home}
             </Link>
 
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary text-foreground">
-                Services <ChevronDown className="w-4 h-4" />
+                {content.services} <ChevronDown className="w-4 h-4" />
               </DropdownMenuTrigger>
               <DropdownMenuContent align="center" className="w-56">
                 <DropdownMenuItem asChild>
@@ -57,12 +82,12 @@ const Navbar = () => {
                     to="/nasha-mukti-kendra"
                     className="w-full cursor-pointer"
                   >
-                    Nasha Mukti Kendra
+                    {content.nashaMuktiKendra}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/adult-home-care" className="w-full cursor-pointer">
-                    Old Age Home Care
+                    {content.adultHomeCare}
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -74,7 +99,7 @@ const Navbar = () => {
                 isActive("/about") ? "text-primary" : "text-foreground"
               }`}
             >
-              About Us
+              {content.about}
             </Link>
 
             <Button
@@ -82,7 +107,18 @@ const Navbar = () => {
               className="bg-primary hover:bg-primary/90"
               asChild
             >
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact">{content.contact}</Link>
+            </Button>
+
+            <Button
+              size="sm"
+              variant="outline"
+              className="min-w-24 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              onClick={toggleLanguage}
+              aria-label={content.switchLanguage}
+            >
+              <Globe className="w-4 h-4" />
+              {otherLanguageLabel}
             </Button>
           </div>
 
@@ -106,11 +142,11 @@ const Navbar = () => {
                   isActive("/") ? "text-primary" : "text-foreground"
                 }`}
               >
-                Home
+                {content.home}
               </Link>
               <div className="pl-4 flex flex-col gap-2">
                 <p className="text-xs text-muted-foreground uppercase tracking-wide">
-                  Services
+                  {content.services}
                 </p>
                 <Link
                   to="/nasha-mukti-kendra"
@@ -121,7 +157,7 @@ const Navbar = () => {
                       : "text-foreground"
                   }`}
                 >
-                  Nasha Mukti Kendra
+                  {content.nashaMuktiKendra}
                 </Link>
                 <Link
                   to="/adult-home-care"
@@ -132,7 +168,7 @@ const Navbar = () => {
                       : "text-foreground"
                   }`}
                 >
-                  Old Age Home Care
+                  {content.adultHomeCare}
                 </Link>
               </div>
               <Link
@@ -142,7 +178,7 @@ const Navbar = () => {
                   isActive("/about") ? "text-primary" : "text-foreground"
                 }`}
               >
-                About Us
+                {content.about}
               </Link>
               <Button
                 size="sm"
@@ -150,8 +186,20 @@ const Navbar = () => {
                 asChild
               >
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
-                  Contact Us
+                  {content.contact}
                 </Link>
+              </Button>
+              <Button
+                size="sm"
+                variant="outline"
+                className="w-fit border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                onClick={() => {
+                  toggleLanguage();
+                  setIsOpen(false);
+                }}
+                aria-label={content.switchLanguage}
+              >
+                {otherLanguageLabel}
               </Button>
             </div>
           </div>

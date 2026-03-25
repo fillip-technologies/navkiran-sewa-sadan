@@ -1,4 +1,5 @@
 import { ReactNode, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -7,9 +8,28 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
+  const { pathname, hash } = useLocation();
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    if (!hash) {
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    const sectionId = hash.replace("#", "");
+    const timer = window.setTimeout(() => {
+      const section = document.getElementById(sectionId);
+
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      } else {
+        window.scrollTo(0, 0);
+      }
+    }, 0);
+
+    return () => window.clearTimeout(timer);
+  }, [pathname, hash]);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />

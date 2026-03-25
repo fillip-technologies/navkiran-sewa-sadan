@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "./ui/badge";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface GalleryImage {
   src: string;
@@ -15,12 +16,12 @@ interface FacilityGalleryProps {
   subtitle?: string;
 }
 
-const FacilityGallery = ({
-  images,
-  title = "Our Facilities",
-  subtitle,
-}: FacilityGalleryProps) => {
+const FacilityGallery = ({ images, title, subtitle }: FacilityGalleryProps) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const { language } = useLanguage();
+
+  const galleryLabel = language === "en" ? "Gallery" : "गैलरी";
+  const defaultTitle = language === "en" ? "Our Facilities" : "हमारी सुविधाएं";
 
   const openLightbox = (index: number) => setSelectedIndex(index);
   const closeLightbox = () => setSelectedIndex(null);
@@ -44,34 +45,29 @@ const FacilityGallery = ({
   return (
     <section className="py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          {/* <span className="text-primary font-medium text-sm uppercase tracking-wider">
-            Gallery
-          </span> */}
-          <Badge className="text-sm">Gallery</Badge>
-
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
-            {title}
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <Badge className="text-sm">{galleryLabel}</Badge>
+          <h2 className="mt-2 mb-4 font-serif text-3xl font-bold text-foreground md:text-4xl">
+            {title ?? defaultTitle}
           </h2>
           {subtitle && <p className="text-muted-foreground">{subtitle}</p>}
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
           {images.map((image, index) => (
             <div
-              key={index}
-              className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-border"
+              key={`${image.title}-${index}`}
+              className="group relative aspect-square cursor-pointer overflow-hidden rounded-xl border border-border"
               onClick={() => openLightbox(index)}
             >
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="text-primary-foreground text-sm font-medium">
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="absolute right-0 bottom-0 left-0 p-4">
+                  <p className="text-sm font-medium text-primary-foreground">
                     {image.title}
                   </p>
                 </div>
@@ -80,10 +76,9 @@ const FacilityGallery = ({
           ))}
         </div>
 
-        {/* Lightbox */}
         {selectedIndex !== null && (
           <div
-            className="fixed inset-0 z-50 bg-foreground/95 flex items-center justify-center"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/95"
             onClick={closeLightbox}
           >
             <Button
@@ -92,31 +87,31 @@ const FacilityGallery = ({
               className="absolute top-4 right-4 text-primary-foreground hover:bg-primary-foreground/10"
               onClick={closeLightbox}
             >
-              <X className="w-6 h-6" />
+              <X className="h-6 w-6" />
             </Button>
 
             <Button
               variant="ghost"
               size="icon"
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-primary-foreground hover:bg-primary-foreground/10"
-              onClick={(e) => {
-                e.stopPropagation();
+              className="absolute top-1/2 left-4 -translate-y-1/2 text-primary-foreground hover:bg-primary-foreground/10"
+              onClick={(event) => {
+                event.stopPropagation();
                 goToPrevious();
               }}
             >
-              <ChevronLeft className="w-8 h-8" />
+              <ChevronLeft className="h-8 w-8" />
             </Button>
 
             <div
-              className="max-w-4xl max-h-[80vh] px-4"
-              onClick={(e) => e.stopPropagation()}
+              className="max-h-[80vh] max-w-4xl px-4"
+              onClick={(event) => event.stopPropagation()}
             >
               <img
                 src={images[selectedIndex].src}
                 alt={images[selectedIndex].alt}
-                className="max-w-full max-h-[70vh] object-contain rounded-lg mx-auto"
+                className="mx-auto max-h-[70vh] max-w-full rounded-lg object-contain"
               />
-              <p className="text-primary-foreground text-center mt-4 font-medium">
+              <p className="mt-4 text-center font-medium text-primary-foreground">
                 {images[selectedIndex].title}
               </p>
             </div>
@@ -124,13 +119,13 @@ const FacilityGallery = ({
             <Button
               variant="ghost"
               size="icon"
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-primary-foreground hover:bg-primary-foreground/10"
-              onClick={(e) => {
-                e.stopPropagation();
+              className="absolute top-1/2 right-4 -translate-y-1/2 text-primary-foreground hover:bg-primary-foreground/10"
+              onClick={(event) => {
+                event.stopPropagation();
                 goToNext();
               }}
             >
-              <ChevronRight className="w-8 h-8" />
+              <ChevronRight className="h-8 w-8" />
             </Button>
           </div>
         )}

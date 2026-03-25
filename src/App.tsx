@@ -9,27 +9,30 @@ import AdultHomeCare from "./pages/AdultHomeCare";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/nasha-mukti-kendra" element={<NashaMuktiKendra />} />
-          <Route path="/adult-home-care" element={<AdultHomeCare />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<ContactUs />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <LanguageProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/nasha-mukti-kendra" element={<NashaMuktiKendra />} />
+            <Route path="/adult-home-care" element={<AdultHomeCare />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<ContactUs />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </LanguageProvider>
 );
 
 export default App;

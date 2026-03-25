@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, LucideIcon } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface ServiceCardProps {
   title: string;
@@ -10,6 +11,8 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ title, description, icon: Icon, link, features }: ServiceCardProps) => {
+  const { language } = useLanguage();
+
   return (
     <div className="bg-card rounded-2xl p-8 card-elevated border border-border">
       <div className="w-14 h-14 rounded-xl bg-accent flex items-center justify-center mb-6">
@@ -37,7 +40,8 @@ const ServiceCard = ({ title, description, icon: Icon, link, features }: Service
         to={link}
         className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all"
       >
-        Learn More <ArrowRight className="w-4 h-4" />
+        {language === "en" ? "Learn More" : "और जानें"}{" "}
+        <ArrowRight className="w-4 h-4" />
       </Link>
     </div>
   );
