@@ -122,13 +122,26 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <Button
+              size="sm"
+              variant="outline"
+              className="h-10 rounded-full border-primary/30 bg-background/80 px-3 text-xs font-semibold text-primary shadow-sm hover:bg-primary hover:text-primary-foreground"
+              onClick={toggleLanguage}
+              aria-label={content.switchLanguage}
+            >
+              <Globe className="h-3.5 w-3.5" />
+              {otherLanguageLabel}
+            </Button>
+
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background/80 text-foreground transition-colors hover:border-primary/40 hover:text-primary"
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+            >
+              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -188,18 +201,6 @@ const Navbar = () => {
                 <Link to="/contact" onClick={() => setIsOpen(false)}>
                   {content.contact}
                 </Link>
-              </Button>
-              <Button
-                size="sm"
-                variant="outline"
-                className="w-fit border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                onClick={() => {
-                  toggleLanguage();
-                  setIsOpen(false);
-                }}
-                aria-label={content.switchLanguage}
-              >
-                {otherLanguageLabel}
               </Button>
             </div>
           </div>
