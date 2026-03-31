@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import {
   Activity,
   ArrowRight,
+  Car,
   CheckCircle,
   Clock,
   Heart,
@@ -277,6 +278,15 @@ const AdultHomeCare = () => {
     { icon: Heart, ...content.services.items[3] },
     { icon: Utensils, ...content.services.items[4] },
     { icon: Activity, ...content.services.items[5] },
+    {
+      icon: Car,
+      title:
+        language === "en" ? "Patient Pickup Facility" : "रोगी पिकअप सुविधा",
+      description:
+        language === "en"
+          ? "We provide patient pickup support both within the same district and from other districts for easier and safer admission."
+          : "हम मरीजों को भर्ती के लिए उसी जिले के भीतर और दूसरे जिलों से भी सुरक्षित पिकअप सुविधा प्रदान करते हैं।",
+    },
   ];
 
   const galleryImages = [

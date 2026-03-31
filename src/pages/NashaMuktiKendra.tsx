@@ -4,6 +4,7 @@ import {
   Activity,
   ArrowRight,
   Brain,
+  Car,
   CheckCircle,
   Clock,
   HeartHandshake,
@@ -239,6 +240,15 @@ const NashaMuktiKendra = () => {
     { icon: Shield, ...content.approach.features[3] },
     { icon: Clock, ...content.approach.features[4] },
     { icon: HeartHandshake, ...content.approach.features[5] },
+    {
+      icon: Car,
+      title:
+        language === "en" ? "Patient Pickup Facility" : "रोगी पिकअप सुविधा",
+      description:
+        language === "en"
+          ? "We provide patient pickup support both within the same district and from other districts to help families bring patients to our center safely."
+          : "हम मरीजों को सुरक्षित रूप से केंद्र तक लाने के लिए उसी जिले के भीतर और दूसरे जिलों से भी पिकअप सुविधा प्रदान करते हैं।",
+    },
   ];
 
   const galleryImages = [
