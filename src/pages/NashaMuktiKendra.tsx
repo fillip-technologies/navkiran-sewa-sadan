@@ -12,6 +12,7 @@ import {
   Shield,
   Users,
 } from "lucide-react";
+import type { CSSProperties } from "react";
 import { Link } from "react-router-dom";
 import FacilityGallery from "@/components/FacilityGallery";
 import rehabCenterImage from "@/assets/rehab-center.jpg";
@@ -259,173 +260,252 @@ const NashaMuktiKendra = () => {
     { src: galleryExercise, ...content.gallery.images[4] },
   ];
 
+  const heroPanelContent =
+    language === "en"
+      ? {
+          label: "Recovery Support",
+          careDescription: "Dedicated care and supervision",
+          servicesSummary: "Counseling, rehab support, and pickup assistance",
+          message:
+            "Safe, structured, and compassionate care designed to help every individual rebuild with dignity.",
+          servicesLabel: "services",
+        }
+      : {
+          label: "सुधार सहायता",
+          careDescription: "24/7 समर्पित देखभाल और निगरानी",
+          servicesSummary: "काउंसलिंग, पुनर्वास सहायता और पिकअप सुविधा",
+          message:
+            "सुरक्षित, अनुशासित और स्नेहपूर्ण देखभाल जो हर व्यक्ति को सम्मान के साथ नया जीवन बनाने में मदद करती है।",
+          servicesLabel: "सेवाएं",
+        };
+
+  const pageTheme = {
+    "--background": "208 57% 97%",
+    "--foreground": "209 43% 18%",
+    "--card": "0 0% 100%",
+    "--card-foreground": "209 43% 18%",
+    "--popover": "0 0% 100%",
+    "--popover-foreground": "209 43% 18%",
+    "--primary": "207 55% 41%",
+    "--primary-foreground": "0 0% 100%",
+    "--secondary": "205 48% 62%",
+    "--secondary-foreground": "0 0% 100%",
+    "--muted": "208 52% 92%",
+    "--muted-foreground": "209 23% 38%",
+    "--accent": "208 48% 88%",
+    "--accent-foreground": "208 66% 35%",
+    "--border": "208 39% 82%",
+    "--input": "208 39% 82%",
+    "--ring": "208 66% 35%",
+    "--hero-gradient":
+      "linear-gradient(135deg, rgba(30, 93, 149, 0.96) 0%, rgba(47, 111, 163, 0.88) 38%, rgba(111, 166, 204, 0.72) 60%)",
+    "--card-shadow": "0 18px 60px -30px rgba(47, 111, 163, 0.35)",
+    "--card-shadow-hover": "0 28px 80px -34px rgba(30, 93, 149, 0.48)",
+    "--text-gradient": "linear-gradient(135deg, #1E5D95 0%, #2F6FA3 55%, #6FA6CC 100%)",
+  } as CSSProperties;
+
   return (
     <Layout>
-      <section className="relative flex min-h-screen items-center overflow-hidden py-20 md:py-28">
-        <div className="absolute inset-0">
-          <img
-            src={rehabCenterImage}
-            alt={content.hero.imageAlt}
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/10" />
-        </div>
-        <div className="container relative mx-auto px-4">
-          <div className="max-w-3xl">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-4 py-2 backdrop-blur-sm">
-              <HeartHandshake className="h-4 w-4 text-primary" />
-              <span className="text-sm font-medium text-foreground">
-                {content.hero.badge}
-              </span>
-            </div>
-            <h1 className="mb-6 font-serif text-4xl font-bold text-foreground md:text-5xl">
-              {content.hero.title}
-            </h1>
-            <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
-              {content.hero.description}
-            </p>
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <Button
-                size="lg"
-                className="gap-2 bg-primary hover:bg-primary/90"
-                asChild
-              >
-                <Link to="/contact">
-                  <Phone className="h-4 w-4" /> {content.hero.primaryCta}
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary bg-card/50 text-primary backdrop-blur-sm hover:bg-primary hover:text-primary-foreground"
-                onClick={() => {
-                  document
-                    .getElementById("ournashapproach")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                {content.hero.secondaryCta}
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-muted/50 py-20 md:py-28" id="ournashapproach">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto mb-12 max-w-2xl text-center">
-            <Badge className="text-sm">{content.approach.badge}</Badge>
-            <h2 className="mt-2 mb-4 font-serif text-3xl font-bold text-foreground md:text-4xl">
-              {content.approach.title}
-            </h2>
-            <p className="text-muted-foreground">{content.approach.description}</p>
+      <div className="overflow-hidden bg-background text-foreground" style={pageTheme}>
+        <section className="relative isolate flex min-h-screen items-center overflow-hidden py-20 md:py-28">
+          <div className="absolute inset-0">
+            <img
+              src={rehabCenterImage}
+              alt={content.hero.imageAlt}
+              className="h-full w-full object-cover"
+            />
+            <div className="hero-gradient absolute inset-0" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(175,203,227,0.38),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(111,166,204,0.28),transparent_24%)]" />
           </div>
 
-          <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature) => (
-              <div
-                key={feature.title}
-                className="card-elevated rounded-xl border border-border bg-card p-6"
-              >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent">
-                  <feature.icon className="h-6 w-6 text-primary" />
+          <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#082946]/55 to-transparent" />
+          <div className="absolute top-24 right-[10%] h-56 w-56 rounded-full bg-[#AFCBE3]/20 blur-3xl" />
+          <div className="absolute bottom-16 left-[6%] h-64 w-64 rounded-full bg-[#6FA6CC]/25 blur-3xl" />
+
+          <div className="container relative mx-auto px-4">
+            <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_320px]">
+              <div className="max-w-3xl">
+                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-white backdrop-blur-md">
+                  <HeartHandshake className="h-4 w-4 text-white" />
+                  <span className="text-sm font-medium">{content.hero.badge}</span>
                 </div>
-                <h3 className="mb-2 text-lg font-semibold text-foreground">
-                  {feature.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {feature.description}
+                <h1 className="mb-6 max-w-2xl font-serif text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+                  {content.hero.title}
+                </h1>
+                <p className="mb-8 max-w-2xl text-lg leading-relaxed text-white/[0.82]">
+                  {content.hero.description}
                 </p>
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <Button
+                    size="lg"
+                    className="gap-2 rounded-full bg-[#1E5D95] px-8 text-white shadow-lg shadow-[#0D3357]/25 hover:bg-[#174A77]"
+                    asChild
+                  >
+                    <Link to="/contact">
+                      <Phone className="h-4 w-4" /> {content.hero.primaryCta}
+                    </Link>
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="rounded-full border-white/[0.35] bg-white/10 px-8 text-white backdrop-blur-md hover:bg-white hover:text-[#1E5D95]"
+                    onClick={() => {
+                      document
+                        .getElementById("ournashapproach")
+                        ?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                  >
+                    {content.hero.secondaryCta}
+                  </Button>
+                </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
-            <div>
-              <Badge className="text-sm">{content.journey.badge}</Badge>
-              <h2 className="mt-2 mb-6 font-serif text-3xl font-bold text-foreground md:text-4xl">
-                {content.journey.title}
+             
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="relative overflow-hidden bg-[linear-gradient(180deg,rgba(175,203,227,0.3)_0%,rgba(255,255,255,0.92)_100%)] py-20 md:py-28"
+          id="ournashapproach"
+        >
+          <div className="absolute inset-x-0 top-0 h-px bg-white/70" />
+          <div className="absolute top-10 left-0 h-56 w-56 rounded-full bg-[#AFCBE3]/[0.45] blur-3xl" />
+          <div className="absolute right-0 bottom-0 h-64 w-64 rounded-full bg-[#6FA6CC]/25 blur-3xl" />
+
+          <div className="container relative mx-auto px-4">
+            <div className="mx-auto mb-12 max-w-2xl text-center">
+              <Badge className="border border-[#6FA6CC]/30 bg-[#2F6FA3] px-4 py-1 text-sm text-white shadow-sm shadow-[#2F6FA3]/20">
+                {content.approach.badge}
+              </Badge>
+              <h2 className="mt-4 mb-4 font-serif text-3xl font-bold text-foreground md:text-4xl">
+                {content.approach.title}
               </h2>
-              <p className="mb-8 text-muted-foreground">
-                {content.journey.description}
+              <p className="text-base leading-relaxed text-muted-foreground">
+                {content.approach.description}
               </p>
-
-              <ul className="space-y-4">
-                {content.journey.steps.map((step) => (
-                  <li key={step} className="flex items-start gap-3">
-                    <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
-                    <span className="text-foreground">{step}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
 
-            <div className="relative">
-              <img
-                src={galleryGroupTherapy}
-                alt={content.journey.imageAlt}
-                className="w-full rounded-2xl shadow-xl"
-              />
-              <div className="absolute -bottom-6 -left-6 max-w-xs rounded-xl border border-border bg-card p-6 shadow-lg">
-                <h3 className="mb-2 font-serif text-xl font-bold text-foreground">
-                  {content.journey.messageTitle}
-                </h3>
-                <p className="text-sm italic text-muted-foreground">
-                  {content.journey.messageQuote}
+            <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {features.map((feature) => (
+                <div
+                  key={feature.title}
+                  className="card-elevated rounded-[1.75rem] border border-white/70 bg-white/[0.85] p-6 backdrop-blur-sm"
+                >
+                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#1E5D95_0%,#2F6FA3_50%,#6FA6CC_100%)] shadow-lg shadow-[#2F6FA3]/20">
+                    <feature.icon className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="mb-2 text-lg font-semibold text-foreground">
+                    {feature.title}
+                  </h3>
+                  <p className="text-sm leading-6 text-muted-foreground">
+                    {feature.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative overflow-hidden py-20 md:py-28">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(175,203,227,0.26),transparent_28%),linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(175,203,227,0.12)_100%)]" />
+
+          <div className="container relative mx-auto px-4">
+            <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,1fr)_1.05fr]">
+              <div>
+                <Badge className="border border-[#6FA6CC]/25 bg-[#EAF4FB] px-4 py-1 text-sm text-[#1E5D95]">
+                  {content.journey.badge}
+                </Badge>
+                <h2 className="mt-4 mb-6 font-serif text-3xl font-bold text-foreground md:text-4xl">
+                  {content.journey.title}
+                </h2>
+                <p className="mb-8 max-w-xl text-base leading-relaxed text-muted-foreground">
+                  {content.journey.description}
                 </p>
-                <p className="mt-2 text-xs font-medium text-primary">
-                  {content.journey.messageAuthor}
-                </p>
+
+                <div className="rounded-[2rem] border border-white/75 bg-white/[0.85] p-7 shadow-[0_24px_70px_-36px_rgba(47,111,163,0.45)] backdrop-blur-sm">
+                  <ul className="space-y-4">
+                    {content.journey.steps.map((step) => (
+                      <li key={step} className="flex items-start gap-3">
+                        <div className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#EAF4FB]">
+                          <CheckCircle className="h-4 w-4 text-[#1E5D95]" />
+                        </div>
+                        <span className="text-foreground">{step}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="absolute -inset-5 rounded-[2.25rem] bg-[linear-gradient(135deg,rgba(175,203,227,0.4),rgba(111,166,204,0.12))] blur-2xl" />
+                <div className="relative overflow-hidden rounded-[2.25rem] border border-white/70 bg-white/30 p-3 shadow-[0_28px_80px_-34px_rgba(30,93,149,0.45)] backdrop-blur-sm">
+                  <img
+                    src={galleryGroupTherapy}
+                    alt={content.journey.imageAlt}
+                    className="w-full rounded-[1.75rem] object-cover shadow-xl"
+                  />
+                </div>
+                <div className="absolute -bottom-6 left-6 right-6 rounded-[1.75rem] border border-white/25 bg-[linear-gradient(135deg,rgba(30,93,149,0.96),rgba(47,111,163,0.92),rgba(111,166,204,0.9))] p-6 text-white shadow-2xl shadow-[#1E5D95]/25 backdrop-blur-sm md:right-auto md:max-w-sm">
+                  <h3 className="mb-2 font-serif text-xl font-bold">
+                    {content.journey.messageTitle}
+                  </h3>
+                  <p className="text-sm italic leading-6 text-white/[0.88]">
+                    {content.journey.messageQuote}
+                  </p>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-white/[0.72]">
+                    {content.journey.messageAuthor}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </section>
+
+        <div className="relative overflow-hidden bg-[linear-gradient(180deg,rgba(234,244,251,0.85)_0%,rgba(175,203,227,0.28)_100%)]">
+          <div className="absolute inset-x-0 top-0 h-px bg-white/70" />
+          <FacilityGallery
+            images={galleryImages}
+            title={content.gallery.title}
+            subtitle={content.gallery.subtitle}
+          />
         </div>
-      </section>
 
-      <FacilityGallery
-        images={galleryImages}
-        title={content.gallery.title}
-        subtitle={content.gallery.subtitle}
-      />
+        <section className="relative overflow-hidden py-16 md:py-20">
+          <div className="absolute inset-0 bg-[linear-gradient(135deg,#1E5D95_0%,#2F6FA3_44%,#6FA6CC_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.2),transparent_26%),radial-gradient(circle_at_bottom_right,rgba(175,203,227,0.3),transparent_30%)]" />
 
-      <section className="bg-primary py-16 md:py-20">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-4 font-serif text-3xl font-bold text-primary-foreground md:text-4xl">
-              {content.cta.title}
-            </h2>
-            <p className="mb-8 text-primary-foreground/80">
-              {content.cta.description}
-            </p>
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button
-                size="lg"
-                variant="secondary"
-                className="gap-2 bg-card text-foreground hover:bg-card/90"
-                asChild
-              >
-                <Link to="/contact">
-                  <Phone className="h-4 w-4" /> {content.cta.primaryCta}
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="gap-2 border-foreground bg-foreground text-white hover:border-primary-foreground hover:bg-primary-foreground hover:text-foreground"
-                asChild
-              >
-                <Link to="/adult-home-care">
-                  {content.cta.secondaryCta} <ArrowRight className="h-4 w-4" />
-                </Link>
-              </Button>
+          <div className="container relative mx-auto px-4">
+            <div className="mx-auto max-w-3xl rounded-[2rem] border border-white/[0.15] bg-white/10 px-6 py-10 text-center text-white shadow-2xl shadow-[#082946]/20 backdrop-blur-md md:px-10">
+              <h2 className="mb-4 font-serif text-3xl font-bold text-white md:text-4xl">
+                {content.cta.title}
+              </h2>
+              <p className="mb-8 text-white/[0.82]">{content.cta.description}</p>
+              <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <Button
+                  size="lg"
+                  className="gap-2 rounded-full bg-white px-8 text-[#1E5D95] hover:bg-[#EAF4FB]"
+                  asChild
+                >
+                  <Link to="/contact">
+                    <Phone className="h-4 w-4" /> {content.cta.primaryCta}
+                  </Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="gap-2 rounded-full border-white/[0.35] bg-white/10 px-8 text-white hover:bg-white hover:text-[#1E5D95]"
+                  asChild
+                >
+                  <Link to="/adult-home-care">
+                    {content.cta.secondaryCta} <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </Layout>
   );
 };

@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import announcementImage from "@/assets/navkiran.png";
+import announcementImageHindi from "@/assets/navkiran.jpeg";
+import announcementImageEnglish from "@/assets/navkiran-english.png";
+import { Language, useLanguage } from "@/context/LanguageContext";
 import {
   Dialog,
   DialogContent,
@@ -10,8 +12,33 @@ import {
 const ANNOUNCEMENT_SESSION_KEY = "navkiran-launch-announcement-seen";
 const ANNOUNCEMENT_DELAY_MS = 700;
 
+const ANNOUNCEMENT_CONTENT: Record<
+  Language,
+  {
+    image: string;
+    alt: string;
+    title: string;
+    description: string;
+  }
+> = {
+  en: {
+    image: announcementImageEnglish,
+    alt: "Navkiran Sewa Sadan launch announcement in English",
+    title: "Launch Announcement",
+    description: "English launch announcement graphic for Navkiran Sewa Sadan.",
+  },
+  hi: {
+    image: announcementImageHindi,
+    alt: "Navkiran Sewa Sadan launch announcement in Hindi",
+    title: "लॉन्च घोषणा",
+    description: "नवकिरण सेवा सदन के लिए हिंदी लॉन्च घोषणा ग्राफिक।",
+  },
+};
+
 const LaunchAnnouncementModal = () => {
+  const { language } = useLanguage();
   const [open, setOpen] = useState(false);
+  const announcement = ANNOUNCEMENT_CONTENT[language];
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -48,10 +75,14 @@ const LaunchAnnouncementModal = () => {
         setOpen(true);
       }}
     >
-      <DialogContent className="w-full p-0 border-0 bg-transparent shadow-none [&>button]:text-black [&>button]:opacity-100 [&>button_svg]:text-black">
+      <DialogContent className="w-[calc(100vw-2rem)] max-w-4xl border-0 bg-transparent p-0 shadow-none [&>button]:opacity-100 [&>button]:text-black [&>button>svg]:text-black">
+        <DialogTitle className="sr-only">{announcement.title}</DialogTitle>
+        <DialogDescription className="sr-only">
+          {announcement.description}
+        </DialogDescription>
         <img
-          src={announcementImage}
-          alt="Navkiran Sewa Sadan launch announcement"
+          src={announcement.image}
+          alt={announcement.alt}
           className="w-full h-auto object-contain px-4 sm:px-0"
         />
       </DialogContent>

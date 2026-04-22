@@ -15,6 +15,7 @@ import {
   Utensils,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import type { CSSProperties } from "react";
 import FacilityGallery from "@/components/FacilityGallery";
 import adultCareImage from "@/assets/adult-care.jpg";
 import galleryBedroom from "@/assets/gallery-bedroom.jpg";
@@ -188,8 +189,7 @@ const AdultHomeCare = () => {
               },
               {
                 title: "पौष्टिक भोजन",
-                description:
-                  "जरूरत और पसंद के अनुसार संतुलित और पौष्टिक भोजन।",
+                description: "जरूरत और पसंद के अनुसार संतुलित और पौष्टिक भोजन।",
               },
               {
                 title: "गतिविधियां और जुड़ाव",
@@ -298,8 +298,38 @@ const AdultHomeCare = () => {
     { src: galleryCounseling, ...content.gallery.images[5] },
   ];
 
+  const goldenTheme = {
+    "--background": "42 60% 95%",
+    "--foreground": "35 45% 18%",
+    "--card": "0 0% 100%",
+    "--card-foreground": "35 45% 18%",
+    "--popover": "0 0% 100%",
+    "--popover-foreground": "35 45% 18%",
+    "--primary": "42 85% 45%", // main gold
+    "--primary-foreground": "0 0% 100%",
+    "--secondary": "40 75% 65%", // soft gold
+    "--secondary-foreground": "35 45% 18%",
+    "--muted": "42 45% 90%",
+    "--muted-foreground": "35 25% 40%",
+    "--accent": "42 70% 85%",
+    "--accent-foreground": "38 80% 30%",
+    "--border": "42 35% 80%",
+    "--input": "42 35% 80%",
+    "--ring": "42 85% 45%",
+    "--hero-gradient":
+      "linear-gradient(135deg, rgba(200, 146, 14, 0.95) 0%, rgba(212, 160, 23, 0.85) 40%, rgba(232, 201, 122, 0.70) 65%)",
+    "--card-shadow": "0 18px 60px -30px rgba(212, 160, 23, 0.35)",
+    "--card-shadow-hover": "0 28px 80px -34px rgba(200, 146, 14, 0.48)",
+    "--text-gradient":
+      "linear-gradient(135deg, #C8920E 0%, #D4A017 55%, #E8C97A 100%)",
+  } as CSSProperties;
+
   return (
     <Layout>
+      <div
+        className="overflow-hidden bg-background text-foreground"
+        style={goldenTheme}
+      >
       <section className="relative flex min-h-screen items-center overflow-hidden py-20 md:py-28">
         <div className="absolute inset-0">
           <img
@@ -357,7 +387,9 @@ const AdultHomeCare = () => {
             <h2 className="mt-2 mb-4 font-serif text-3xl font-bold text-foreground md:text-4xl">
               {content.services.title}
             </h2>
-            <p className="text-muted-foreground">{content.services.description}</p>
+            <p className="text-muted-foreground">
+              {content.services.description}
+            </p>
           </div>
 
           <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -445,7 +477,10 @@ const AdultHomeCare = () => {
             </h2>
             <div className="grid gap-6 sm:grid-cols-3">
               {content.commitment.items.map((item) => (
-                <div key={item.title} className="rounded-xl border border-border bg-card p-6">
+                <div
+                  key={item.title}
+                  className="rounded-xl border border-border bg-card p-6"
+                >
                   <h3 className="mb-2 font-serif text-xl font-semibold text-primary">
                     {item.title}
                   </h3>
@@ -493,6 +528,7 @@ const AdultHomeCare = () => {
           </div>
         </div>
       </section>
+      </div>
     </Layout>
   );
 };
