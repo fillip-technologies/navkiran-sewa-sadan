@@ -10,12 +10,12 @@ const HeroSection = () => {
   const content =
     language === "en"
       ? {
-          imageAlt: "Compassionate care and support at Navkiran Sewa Sadan",
+          imageAlt: "Compassionate care and support at Navkiran Seva Sadan",
           badge: "Non-Profit Organization",
           title: "Restoring Hope, ",
           highlight: "Healing Lives",
           description:
-            "Navkiran Sewa Sadan supports individuals with compassionate care, rehabilitation, and dignity. Together, we help rebuild lives and bring hope back.",
+            "Navkiran Seva Sadan supports individuals with compassionate care, rehabilitation, and dignity. Together, we help rebuild lives and bring hope back.",
           primaryCta: "Explore Our Services",
           secondaryCta: "Know More About Us",
           stats: [

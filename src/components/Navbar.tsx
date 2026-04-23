@@ -18,7 +18,7 @@ const Navbar = () => {
   const content =
     language === "en"
       ? {
-          brand: "Navkiran Sewa Sadan",
+          brand: "Navkiran Seva Sadan",
           tagline: "Restoring Hope, Healing Lives",
           home: "Home",
           services: "Services",

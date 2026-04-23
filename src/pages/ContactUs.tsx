@@ -12,7 +12,7 @@ const ContactUs = () => {
     language === "en"
       ? {
           hero: {
-            imageAlt: "Contact Navkiran Sewa Sadan",
+            imageAlt: "Contact Navkiran Seva Sadan",
             badge: "Get in Touch",
             title: "Contact Us",
             description:
@@ -36,14 +36,14 @@ const ContactUs = () => {
               },
               {
                 title: "Address",
-                details: ["Navkiran Sewa Sadan", "Patna, Bihar, India"],
+                details: ["Navkiran Seva Sadan", "Patna, Bihar, India"],
               },
               {
                 title: "Hours",
                 details: ["24/7 Emergency Support", "Office: 9 AM - 6 PM"],
               },
             ],
-            mapTitle: "Navkiran Sewa Sadan Location",
+            mapTitle: "Navkiran Seva Sadan Location",
           },
           emergency: {
             title: "Need Immediate Help?",

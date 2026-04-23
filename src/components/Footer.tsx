@@ -18,7 +18,7 @@ const Footer = () => {
   const content =
     language === "en"
       ? {
-          brand: "Navkiran Sewa Sadan",
+          brand: "Navkiran Seva Sadan",
           description:
             "A non-profit organization committed to supporting people in their journey toward recovery, dignity, and a better quality of life.",
           quickLinks: "Quick Links",
@@ -32,8 +32,8 @@ const Footer = () => {
           getInTouch: "Get In Touch",
           supportText:
             "Reach out to us for support or to learn more about our services.",
-          addressLines: ["Navkiran Sewa Sadan", "Patna, Bihar, India"],
-          copyright: "Navkiran Sewa Sadan. All rights reserved.",
+          addressLines: ["Navkiran Seva Sadan", "Patna, Bihar, India"],
+          copyright: "Navkiran Seva Sadan. All rights reserved.",
           madeWith: "Made with",
           madeForHumanity: "for humanity.",
           developedBy: "Developed by Fillip Technologies Pvt. Ltd.",

@@ -10,7 +10,7 @@ const AboutSection = () => {
           badge: "About Us",
           title: "A Commitment to Care and Recovery",
           paragraphOne:
-            "Navkiran Sewa Sadan is a non-profit organization dedicated to recovery, dignity, and a better quality of life. Built on compassion and social responsibility, we provide care that supports both physical and emotional well-being.",
+            "Navkiran Seva Sadan is a non-profit organization dedicated to recovery, dignity, and a better quality of life. Built on compassion and social responsibility, we provide care that supports both physical and emotional well-being.",
           paragraphTwo:
             "Our team works with dedication to create a place where people feel safe, respected, and encouraged to start again. We believe the right support can help every person move forward with hope.",
           values: [

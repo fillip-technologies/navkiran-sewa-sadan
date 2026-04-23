@@ -23,13 +23,13 @@ const ANNOUNCEMENT_CONTENT: Record<
 > = {
   en: {
     image: announcementImageEnglish,
-    alt: "Navkiran Sewa Sadan launch announcement in English",
+    alt: "Navkiran Seva Sadan launch announcement in English",
     title: "Launch Announcement",
-    description: "English launch announcement graphic for Navkiran Sewa Sadan.",
+    description: "English launch announcement graphic for Navkiran Seva Sadan.",
   },
   hi: {
     image: announcementImageHindi,
-    alt: "Navkiran Sewa Sadan launch announcement in Hindi",
+    alt: "Navkiran Seva Sadan launch announcement in Hindi",
     title: "लॉन्च घोषणा",
     description: "नवकिरण सेवा सदन के लिए हिंदी लॉन्च घोषणा ग्राफिक।",
   },

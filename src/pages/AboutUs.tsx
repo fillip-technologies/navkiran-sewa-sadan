@@ -22,14 +22,14 @@ const AboutUs = () => {
     language === "en"
       ? {
           hero: {
-            imageAlt: "About Navkiran Sewa Sadan",
+            imageAlt: "About Navkiran Seva Sadan",
             badge: "About Us",
             title: "Who We Are",
             description:
-              "Navkiran Sewa Sadan is a non-profit organization committed to recovery, dignity, and a better quality of life.",
+              "Navkiran Seva Sadan is a non-profit organization committed to recovery, dignity, and a better quality of life.",
           },
           missionVision: {
-            imageAlt: "Dedicated team at Navkiran Sewa Sadan",
+            imageAlt: "Dedicated team at Navkiran Seva Sadan",
             missionTitle: "Our Mission",
             missionDescription:
               "To provide compassionate care, rehabilitation, and support to people in need, helping them rebuild life with dignity and hope in a safe and nurturing environment.",
@@ -41,7 +41,7 @@ const AboutUs = () => {
             badge: "Our Story",
             title: "A Journey of Compassion",
             paragraphs: [
-              "Navkiran Sewa Sadan began with a simple vision: to serve people who need support the most. Our journey started over a decade ago when we saw the growing need for compassionate care in our community.",
+              "Navkiran Seva Sadan began with a simple vision: to serve people who need support the most. Our journey started over a decade ago when we saw the growing need for compassionate care in our community.",
               "What began as a small initiative has grown into a complete care organization offering de-addiction rehabilitation and old age home care services. Over the years, we have supported more than 500 individuals and their families.",
               "Today, we continue to grow while staying rooted in compassion, dignity, and community service. Every life we touch strengthens our commitment to make a meaningful difference.",
             ],
@@ -50,7 +50,7 @@ const AboutUs = () => {
             badge: "Our Values",
             title: "What Guides Us",
             description:
-              "These values shape every step we take at Navkiran Sewa Sadan.",
+              "These values shape every step we take at Navkiran Seva Sadan.",
             items: [
               {
                 title: "Compassion",

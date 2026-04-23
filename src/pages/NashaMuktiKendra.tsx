@@ -94,7 +94,7 @@ const NashaMuktiKendra = () => {
             messageTitle: "A Message of Hope",
             messageQuote:
               "\"Recovery is possible. You are not alone in this journey.\"",
-            messageAuthor: "Navkiran Sewa Sadan Team",
+            messageAuthor: "Navkiran Seva Sadan Team",
           },
           gallery: {
             title: "Our Rehabilitation Facilities",
