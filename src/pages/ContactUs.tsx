@@ -25,7 +25,7 @@ const ContactUs = () => {
             cards: [
               {
                 title: "Phone",
-                details: ["+91 7004775368"],
+                details: ["+91 9955901593"],
               },
               {
                 title: "Email",
@@ -67,7 +67,7 @@ const ContactUs = () => {
             cards: [
               {
                 title: "फोन",
-                details: ["+91 7004775368"],
+                details: ["+91 9955901593"],
               },
               {
                 title: "ईमेल",
