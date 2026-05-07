@@ -54,9 +54,9 @@ const Navbar = () => {
               </span>
             </div>
             <div className="hidden sm:block">
-              <h1 className="font-serif font-semibold text-lg text-foreground leading-tight">
+              <p className="font-serif font-semibold text-lg text-foreground leading-tight">
                 {content.brand}
-              </h1>
+              </p>
               <p className="text-xs text-muted-foreground">{content.tagline}</p>
             </div>
           </Link>

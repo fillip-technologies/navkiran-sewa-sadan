@@ -7,77 +7,82 @@ const AboutSection = () => {
   const content =
     language === "en"
       ? {
-          badge: "About Us",
-          title: "A Commitment to Care and Recovery",
+          badge: "Who We Are",
+          title: "Dedicated To Care & Recovery",
           paragraphOne:
-            "Navkiran Seva Sadan is a non-profit organization dedicated to recovery, dignity, and a better quality of life. Built on compassion and social responsibility, we provide care that supports both physical and emotional well-being.",
+            "Navkiran Seva Sadan is a dedicated service-oriented center that assists individuals in recovering from addiction and provides elderly care services, encouraging improved and better quality of life. We are committed to serving individuals both physically and emotionally with compassion and a strong sense of social responsibility.",
           paragraphTwo:
-            "Our team works with dedication to create a place where people feel safe, respected, and encouraged to start again. We believe the right support can help every person move forward with hope.",
+            "As the best nasha mukti kendra in Patna, our team of seasoned caregivers takes a supportive, compassionate approach to restore hope, health, and happiness in everyoneâ€™s life.",
           values: [
             {
-              title: "Compassion",
+              title: "Empathy",
               description:
-                "Every individual deserves care, respect, and understanding.",
+                "We ensure everyone feels safe, respected, and empowered.",
             },
             {
               title: "Safe Environment",
-              description: "We provide secure and supportive spaces for healing.",
+              description:
+                "We provide a safe and secure place for treatment and recovery.",
             },
             {
-              title: "Community",
+              title: "Compassionate Care",
               description:
-                "We build connections that create belonging and support.",
+                "We make meaningful connections for persistent support.",
             },
             {
               title: "Dignity",
-              description: "We honor every person and protect their self-worth.",
+              description: "We ensure every person is treated with dignity.",
             },
           ],
-          purposeLabel: "Our Purpose",
-          purposeTitle: "Driven by Compassion, Guided by Care",
+          purposeLabel: "Our Mission",
+          purposeTitle: "Restoring Lives, Rebuilding Families",
           purposeDescription:
-            "We focus on long-term healing through medical support, emotional care, and community connection to help individuals rebuild life with dignity.",
+            "Our mission is to foster long-term recovery and well-being. With proper treatment and emotional support, we strive to make a positive impact, encouraging individuals to live their lives with confidence and dignity.",
           impactStats: [
             { number: "500+", label: "Lives Supported" },
             { number: "10+", label: "Years of Service" },
-            { number: "24/7", label: "Care & Support" },
-            { number: "100%", label: "Compassion" },
+            { number: "24/7", label: "Care and Assistance" },
+            { number: "100%", label: "Compassion-Driven Approach" },
           ],
         }
       : {
-          badge: "हमारे बारे में",
+          badge: "हम कौन हैं",
           title: "देखभाल और सुधार के लिए समर्पित",
           paragraphOne:
-            "नवकिरण सेवा सदन एक सेवा संस्था है जो लोगों को सुधार, सम्मान और बेहतर जीवन की ओर बढ़ने में मदद करती है। करुणा और सामाजिक जिम्मेदारी के साथ हम शारीरिक और मानसिक दोनों तरह की देखभाल देते हैं।",
+            "नवकिरण सेवा सदन एक समर्पित बिहार नशा मुक्ति सेवा केंद्र है, जो लोगों को नशे की लत से उबरने में मदद करता है और बुजुर्गों के लिए देखभाल सेवाएं प्रदान करता है, ताकि वे स्वस्थ और खुशहाल जीवन जी सकें। हम करुणा और सामाजिक जिम्मेदारी के साथ शारीरिक और भावनात्मक दोनों प्रकार की देखभाल के लिए प्रतिबद्ध हैं।",
           paragraphTwo:
-            "हमारी टीम ऐसा माहौल बनाती है जहां हर व्यक्ति खुद को सुरक्षित, सम्मानित और मजबूत महसूस करे। हमें भरोसा है कि सही सहारे से हर इंसान नई उम्मीद के साथ आगे बढ़ सकता है।",
+            "हमारा पटना ड्रग रिहैब सेंटर, एक विश्वसनीय नशा मुक्ति केंद्र के रूप में जाना जाता है, हमारी अनुभवी टीम सहायक और संवेदनशील दृष्टिकोण अपनाते हुए हर व्यक्ति के जीवन में आशा, स्वास्थ्य और खुशियां वापस लाने का प्रयास करती है।",
           values: [
             {
               title: "सहानुभूति",
-              description: "हर व्यक्ति देखभाल, सम्मान और समझ का हकदार है।",
+              description:
+                "हम सुनिश्चित करते हैं कि हर व्यक्ति खुद को सुरक्षित, सम्मानित और आत्मविश्वासी महसूस करे।",
             },
             {
-              title: "सुरक्षित माहौल",
-              description: "हम इलाज और सुधार के लिए सुरक्षित जगह देते हैं।",
+              title: "सुरक्षित वातावरण",
+              description:
+                "हम उपचार और सुधार के लिए एक सुरक्षित और संरक्षित स्थान प्रदान करते हैं।",
             },
             {
-              title: "साथ",
-              description: "हम ऐसा जुड़ाव बनाते हैं जो सहारा देता है।",
+              title: "करुणामय देखभाल",
+              description:
+                "हम स्नेहपूर्ण जुड़ाव बनाते हैं, जो निरंतर सहयोग और समर्थन प्रदान करता है।",
             },
             {
               title: "सम्मान",
-              description: "हम हर व्यक्ति का मान और आत्मविश्वास बचाए रखते हैं।",
+              description:
+                "हम हर व्यक्ति के आत्मसम्मान और गरिमा को बनाए रखते हैं।",
             },
           ],
           purposeLabel: "हमारा उद्देश्य",
-          purposeTitle: "सेवा भाव के साथ सही देखभाल",
+          purposeTitle: "जीवन संवारना, परिवारों को फिर से जोड़ना",
           purposeDescription:
-            "हम लंबे समय के सुधार पर काम करते हैं। इलाज, भावनात्मक सहारा और सामुदायिक जुड़ाव के साथ हम लोगों को सम्मान के साथ जीवन फिर से बनाने में मदद करते हैं।",
+            "हमारा उद्देश्य निरंतर सुधार और समग्र कल्याण को बढ़ावा देना है। उचित उपचार, भावनात्मक सहारा और निरंतर देखभाल के माध्यम से हम हर व्यक्ति के जीवन में सकारात्मक बदलाव लाने का प्रयास करते हैं, ताकि वे आत्मविश्वास और सम्मान के साथ अपना जीवन जी सकें।",
           impactStats: [
-            { number: "500+", label: "लोगों को सहारा" },
-            { number: "10+", label: "सेवा के साल" },
-            { number: "24/7", label: "देखभाल और सहारा" },
-            { number: "100%", label: "करुणा" },
+            { number: "500+", label: "जीवनों को नया सहारा" },
+            { number: "10+", label: "सेवा के वर्ष" },
+            { number: "24/7", label: "देखभाल और सहायता" },
+            { number: "100%", label: "करुणा के साथ सेवा" },
           ],
         };
 

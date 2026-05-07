@@ -22,6 +22,8 @@ import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
 import galleryExercise from "@/assets/gallery-exercise.jpg";
 import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/context/LanguageContext";
+import Seo from "@/components/Seo";
+import { seoData } from "@/constants/seo";
 
 const NashaMuktiKendra = () => {
   const { language } = useLanguage();
@@ -32,63 +34,63 @@ const NashaMuktiKendra = () => {
           hero: {
             imageAlt: "Nasha Mukti Kendra rehabilitation center",
             badge: "De-Addiction & Rehabilitation",
-            title: "Nasha Mukti Kendra",
+            title: "Drug De-Addiction Center",
             description:
-              "Our de-addiction center provides a caring and judgment-free space where people can overcome substance dependency and rebuild life. With professional guidance and complete support, we help individuals regain hope and move forward with confidence.",
+              "Healing begins when someone feels safe enough to speak their truth. We provide a caring and non-judgmental space, where individuals can overcome addiction and transform their lives. Through professional guidance and personalised care, our nasha mukti kendra Patna empowers individuals to regain hope, confidence, and a sense of purpose.",
             primaryCta: "Get Help Now",
             secondaryCta: "Learn About Our Approach",
           },
           approach: {
             badge: "Our Approach",
-            title: "Compassionate Care for Recovery",
+            title: "Compassionate Care for Lasting Recovery",
             description:
-              "We understand that addiction is complex. Our complete approach supports physical, emotional, and mental recovery together.",
+              "Our setting feels steady, built so growth can take root slowly. Body, thoughts, feelings - each part gets space to shift without pressure. Hence, progress shows up quietly, shaped by consistent and personalised care.",
             features: [
               {
-                title: "Professional Counseling",
+                title: "Expert Counselling",
                 description:
-                  "One-to-one and group sessions with trained counselors to understand root causes and build healthy coping habits.",
+                  "Personalised one-on-one and small group sessions, with skilled counsellors who listen closely, digging into what's really behind your struggles and developing healthier habits.",
               },
               {
-                title: "Structured Rehabilitation",
+                title: "Supportive Rehabilitation Program",
                 description:
-                  "A disciplined daily program designed to rebuild routine, focus, and healthy habits.",
+                  "Being the best nasha mukti kendra in Patna, our structured routine is designed to rebuild confidence, restore stability, helping individual take control of their lives.",
               },
               {
                 title: "Family Support",
                 description:
-                  "We involve families through counseling and guidance during the recovery process.",
+                  "Families join the process early, shaped by ongoing counseling that builds steady backing during healing.",
               },
               {
-                title: "Safe Environment",
+                title: "Safe & Peaceful Environment",
                 description:
-                  "A secure, substance-free setting where individuals can focus on recovery.",
+                  "A quiet place, built for recovery, keeps distractions far away. People come here because their minds feel clearer without chaos nearby.",
               },
               {
-                title: "24/7 Care",
+                title: "24/7 Care & Support",
                 description:
-                  "Our dedicated team is available at all hours so help is always close.",
+                  "When you reach out, someone will always be there to help. Night or day, we're ready to listen, guide, or simply sit with your concerns.",
               },
               {
-                title: "Aftercare Planning",
+                title: "Postcare Planning",
                 description:
-                  "We prepare individuals for life after rehabilitation with continued support and follow-up care.",
+                  "Stability sticks around when help keeps coming; our follow-up steps fit into real life, making setbacks less likely.",
               },
             ],
           },
           journey: {
             badge: "Recovery Journey",
-            title: "Your Path to Freedom",
+            title: "Your Path Toward a New Life",
             description:
-              "Recovery is a journey. Our structured program guides each person step by step with support that helps create lasting change.",
+              "Recovery takes time; it is a long journey. Our nasha mukti kendra Patna supports a step-by-step process, ensuring lasting transformation, stability, and a confident return to life.",
             steps: [
-              "Initial assessment and personalized care planning",
-              "Detox support in a safe and monitored setting",
-              "Individual and group counseling sessions",
-              "Life skills training and vocational guidance",
-              "Physical wellness activities and recreation",
-              "Family involvement and guidance programs",
-              "Gradual reintegration with continued support",
+              "Early Assessment and personalised care",
+              "Safe and supervised detox",
+              "Therapeutic counseling session",
+              "Life skills and work Readiness",
+              "Physical Wellness and Recreation",
+              "Family Involvement and Guidance",
+              "Gradual Reintegration with Continued Support",
             ],
             imageAlt: "Group therapy session at Nasha Mukti Kendra",
             messageTitle: "A Message of Hope",
@@ -99,7 +101,7 @@ const NashaMuktiKendra = () => {
           gallery: {
             title: "Our Rehabilitation Facilities",
             subtitle:
-              "Take a look at our calm and healing environment designed to support recovery.",
+              "Step into a calm, safe, and healing environment, designed for recovery and life transformation.",
             images: [
               {
                 alt: "Meditation and wellness room",
@@ -107,7 +109,7 @@ const NashaMuktiKendra = () => {
               },
               {
                 alt: "Counseling session",
-                title: "Counseling Sessions",
+                title: "Counselling session",
               },
               {
                 alt: "Group therapy session",
@@ -115,18 +117,18 @@ const NashaMuktiKendra = () => {
               },
               {
                 alt: "Outdoor garden area",
-                title: "Garden & Outdoor Space",
+                title: "Garden and Open Space",
               },
               {
                 alt: "Exercise and fitness area",
-                title: "Fitness Center",
+                title: "Fitness Room",
               },
             ],
           },
           cta: {
-            title: "Take the First Step Today",
+            title: "Start Your Journey Today",
             description:
-              "Whether you are looking for help for yourself or a loved one, we are here with compassion and understanding.",
+              "We are available round-the-clock to help you or your loved one, take the first step toward recovery and a better future.",
             primaryCta: "Contact Us",
             secondaryCta: "View Other Services",
           },
@@ -137,63 +139,63 @@ const NashaMuktiKendra = () => {
             badge: "नशा मुक्ति और पुनर्वास",
             title: "नशा मुक्ति केंद्र",
             description:
-              "हमारा नशा मुक्ति केंद्र ऐसा स्नेहपूर्ण और बिना निर्णय वाला माहौल देता है जहां लोग नशे की लत से बाहर आकर जीवन फिर से संभाल सकें। विशेषज्ञ मार्गदर्शन और पूरी देखभाल के साथ हम उम्मीद और आत्मविश्वास वापस लाने में मदद करते हैं।",
+              "उपचार की शुरुआत तब होती है जब व्यक्ति स्वयं अपनी बात खुलकर कहने के लिए सुरक्षित महसूस करता है। हम एक स्नेहपूर्ण और बिना किसी भेदभाव वाला वातावरण प्रदान करते हैं, जहाँ लोग नशे की लत से उबरकर अपने जीवन में सकारात्मक बदलाव ला सकते हैं।\n\nविशेषज्ञ मार्गदर्शन और व्यक्तिगत देखभाल के माध्यम से, हमारा पटना ड्रग रिहैब सेंटर लोगों को नई उम्मीद, आत्मविश्वास और जीवन का उद्देश्य फिर से पाने में सक्षम बनाता है।",
             primaryCta: "अभी मदद लें",
             secondaryCta: "हमारा तरीका जानें",
           },
           approach: {
             badge: "हमारा तरीका",
-            title: "सुधार के लिए स्नेहपूर्ण देखभाल",
+            title: "स्थायी सुधार के लिए स्नेहपूर्ण देखभाल",
             description:
-              "हम समझते हैं कि नशे की लत एक कठिन समस्या है। इसलिए हमारा तरीका शरीर, मन और भावनाओं तीनों को साथ लेकर चलता है।",
+              "हमारा पटना में नशा मुक्ति केंद्र का वातावरण स्थिर और सहयोगी है, जहाँ विकास धीरे-धीरे और स्वाभाविक रूप से आकार लेता है। शरीर, विचार और भावनाएँ, हर पहलू को बिना किसी दबाव के बदलने और आगे बढ़ने का अवसर दिया जाता है।\n\nइसी कारण, निरंतर और व्यक्तिगत देखभाल के माध्यम से सुधार धीरे-धीरे लेकिन मजबूती के साथ दिखाई देता है।",
             features: [
               {
-                title: "विशेषज्ञ काउंसलिंग",
+                title: "विशेषज्ञ परामर्श",
                 description:
-                  "प्रशिक्षित काउंसलर के साथ व्यक्तिगत और समूह सत्र, ताकि कारण समझे जाएं और सही आदतें बनें।",
+                  "व्यक्तिगत और छोटे समूह सत्र, जहाँ अनुभवी काउंसलर आपकी बात ध्यान से सुनते हैं, समस्याओं की जड़ तक पहुँचते हैं और बेहतर जीवन के लिए सकारात्मक आदतें विकसित करने में मदद करते हैं।",
               },
               {
-                title: "सही पुनर्वास कार्यक्रम",
+                title: "उचित पुनर्वास कार्यक्रम",
                 description:
-                  "अनुशासन और नियमित दिनचर्या वाला कार्यक्रम जो जीवन को फिर से व्यवस्थित करने में मदद करे।",
+                  "पटना के विश्वसनीय नशा मुक्ति केंद्र के रूप में, हमारी सुव्यवस्थित दिनचर्या आत्मविश्वास बढ़ाने, स्थिरता वापस लाने और व्यक्ति को अपने जीवन पर फिर से नियंत्रण पाने में सहायता करती है।",
               },
               {
-                title: "परिवार का सहारा",
+                title: "परिवार का सहयोग",
                 description:
-                  "हम काउंसलिंग और मार्गदर्शन के जरिए परिवार को भी सुधार की प्रक्रिया में शामिल करते हैं।",
+                  "उपचार की शुरुआत से ही परिवार को शामिल किया जाता है, और निरंतर काउंसलिंग के माध्यम से मजबूत सहयोग और समझ विकसित की जाती है।",
               },
               {
-                title: "सुरक्षित माहौल",
+                title: "सुरक्षित और शांत वातावरण",
                 description:
-                  "नशामुक्त, सुरक्षित और शांत जगह जहां पूरा ध्यान सुधार पर रहे।",
+                  "एक शांत, सुरक्षित और व्यवस्थित स्थान, जहाँ बिना किसी बाधा के व्यक्ति अपने सुधार और उपचार पर पूरी तरह ध्यान केंद्रित कर सकता है।",
               },
               {
-                title: "24/7 देखभाल",
+                title: "24/7 देखभाल और सहायता",
                 description:
-                  "हमारी टीम हर समय उपलब्ध रहती है ताकि जरूरत पड़ने पर तुरंत मदद मिल सके।",
+                  "दिन हो या रात, जब भी आपको जरूरत हो, हमारी टीम हमेशा सहायता, मार्गदर्शन और सहयोग के लिए तैयार रहती है।",
               },
               {
-                title: "आगे की योजना",
+                title: "पुनः देखभाल योजना (Postcare Planning)",
                 description:
-                  "पुनर्वास के बाद भी हम आगे की देखभाल और सहारे की तैयारी करते हैं।",
+                  "उपचार के बाद भी निरंतर सहयोग दिया जाता है, ताकि सुधार लंबे समय तक बना रहे और जीवन में स्थिरता कायम रहे।",
               },
             ],
           },
           journey: {
             badge: "सुधार की यात्रा",
-            title: "नए जीवन की ओर आपका रास्ता",
+            title: "एक नए जीवन की ओर आपकी यात्रा",
             description:
-              "सुधार एक सफर है। हमारा कार्यक्रम हर व्यक्ति को एक-एक कदम आगे बढ़ाता है ताकि बदलाव लंबे समय तक बना रहे।",
+              "सुधार एक लंबी प्रक्रिया है, जिसमें समय और धैर्य की आवश्यकता होती है। हमारा नशा मुक्ति अस्पताल पटना चरणबद्ध तरीके से सहायता प्रदान करता है, ताकि स्थायी बदलाव, जीवन में स्थिरता और आत्मविश्वास के साथ नई शुरुआत सुनिश्चित हो सके।",
             steps: [
-              "शुरुआती जांच और व्यक्तिगत देखभाल की योजना",
-              "सुरक्षित निगरानी में डिटॉक्स सहायता",
-              "व्यक्तिगत और समूह काउंसलिंग सत्र",
-              "जीवन कौशल और काम से जुड़ी दिशा",
-              "शारीरिक स्वास्थ्य गतिविधियां और मनोरंजन",
+              "प्रारंभिक जांच और व्यक्तिगत देखभाल",
+              "सुरक्षित और निगरानी में डिटॉक्स",
+              "उपचारात्मक काउंसलिंग सत्र",
+              "जीवन कौशल और कार्य के लिए तैयारी",
+              "शारीरिक स्वास्थ्य और मनोरंजन",
               "परिवार की भागीदारी और मार्गदर्शन",
-              "लगातार सहारे के साथ धीरे-धीरे समाज में वापसी",
+              "निरंतर सहयोग के साथ समाज में पुनः शामिल होना",
             ],
-            imageAlt: "नशा मुक्ति केंद्र में समूह सत्र",
+            imageAlt: "नशा मुक्ति केंद्र में समूह चिकित्सा सत्र",
             messageTitle: "उम्मीद की बात",
             messageQuote: "\"सुधार संभव है। आप इस सफर में अकेले नहीं हैं।\"",
             messageAuthor: "नवकिरण सेवा सदन टीम",
@@ -201,10 +203,10 @@ const NashaMuktiKendra = () => {
           gallery: {
             title: "हमारी पुनर्वास सुविधाएं",
             subtitle:
-              "हमारे शांत और सुधार में मदद करने वाले माहौल की एक झलक देखें।",
+              "एक शांत, सुरक्षित और उपचार के अनुकूल वातावरण का अनुभव करें, जिसे सुधार और जीवन में सकारात्मक बदलाव के लिए विशेष रूप से तैयार किया गया है।",
             images: [
               {
-                alt: "ध्यान और स्वास्थ्य कक्ष",
+                alt: "ध्यान कक्ष",
                 title: "ध्यान कक्ष",
               },
               {
@@ -212,23 +214,23 @@ const NashaMuktiKendra = () => {
                 title: "काउंसलिंग सत्र",
               },
               {
-                alt: "समूह सत्र",
-                title: "समूह थेरेपी",
+                alt: "समूह चिकित्सा",
+                title: "समूह चिकित्सा",
               },
               {
                 alt: "बगीचा और खुला स्थान",
                 title: "बगीचा और खुला स्थान",
               },
               {
-                alt: "व्यायाम क्षेत्र",
+                alt: "फिटनेस कक्ष",
                 title: "फिटनेस कक्ष",
               },
             ],
           },
           cta: {
-            title: "आज पहला कदम उठाएं",
+            title: "आज ही अपनी यात्रा शुरू करें",
             description:
-              "चाहे आपको अपने लिए मदद चाहिए या किसी अपने के लिए, हम समझ और सहारे के साथ आपके साथ हैं।",
+              "हम 24/7 उपलब्ध हैं, ताकि आप या आपके प्रियजन सुधार और एक बेहतर भविष्य की ओर पहला कदम उठा सकें।",
             primaryCta: "संपर्क करें",
             secondaryCta: "अन्य सेवाएं देखें",
           },
@@ -244,11 +246,11 @@ const NashaMuktiKendra = () => {
     {
       icon: Car,
       title:
-        language === "en" ? "Patient Pickup Facility" : "रोगी पिकअप सुविधा",
+        language === "en" ? "Patient Pickup Facility" : "मरीज पिकअप",
       description:
         language === "en"
-          ? "We provide patient pickup support both within the same district and from other districts to help families bring patients to our center safely."
-          : "हम मरीजों को सुरक्षित रूप से केंद्र तक लाने के लिए उसी जिले के भीतर और दूसरे जिलों से भी पिकअप सुविधा प्रदान करते हैं।",
+          ? "Getting here should never be a problem. Our pickup service covers the district along with surrounding spots, so people arrive relaxed."
+          : "हम सुरक्षित और भरोसेमंद पिकअप सेवा प्रदान करते हैं, जो जिले के साथ-साथ आसपास के क्षेत्रों को भी कवर करती है, ताकि मरीज आराम से केंद्र तक पहुँच सकें।",
     },
   ];
 
@@ -275,7 +277,7 @@ const NashaMuktiKendra = () => {
           careDescription: "24/7 समर्पित देखभाल और निगरानी",
           servicesSummary: "काउंसलिंग, पुनर्वास सहायता और पिकअप सुविधा",
           message:
-            "सुरक्षित, अनुशासित और स्नेहपूर्ण देखभाल जो हर व्यक्ति को सम्मान के साथ नया जीवन बनाने में मदद करती है।",
+            "सुरक्षित, अनुशासित और स्नेहपूर्ण देखभाल, जो हर व्यक्ति को सम्मान के साथ नया जीवन बनाने में मदद करती है।",
           servicesLabel: "सेवाएं",
         };
 
@@ -306,6 +308,7 @@ const NashaMuktiKendra = () => {
 
   return (
     <Layout>
+      <Seo {...seoData.nashaMuktiKendra} />
       <div className="overflow-hidden bg-background text-foreground" style={pageTheme}>
         <section className="relative isolate flex min-h-screen items-center overflow-hidden py-20 md:py-28">
           <div className="absolute inset-0">

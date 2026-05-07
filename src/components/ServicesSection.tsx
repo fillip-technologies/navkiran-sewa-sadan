@@ -12,32 +12,32 @@ const ServicesSection = () => {
           badge: "Our Services",
           title: "How We Help",
           description:
-            "We offer focused support during life’s difficult moments with care that respects dignity and encourages healing.",
+            "Renowned as the best Nasha Mukti Kendra in Patna, we stand by you in challenging times, supporting compassionate care, healing, and a loving life with dignity.",
           services: [
             {
-              title: "Nasha Mukti Kendra",
+              title: "Drug De-Addiction Center (Nasha Mukti Kendra)",
               description:
-                "Our de-addiction and rehabilitation center provides complete support for people seeking freedom from substance dependency. We offer a safe and respectful environment focused on recovery and reintegration.",
+                "Our nasha mukti kendra Patna and rehabilitation center is dedicated to providing complete support to individuals overcoming substance abuse. Here, we prioritise recovery in a safe, harmonious, and respectful environment.",
               icon: HeartHandshake,
               link: "/nasha-mukti-kendra",
               features: [
-                "Professional counseling",
-                "Structured rehabilitation program",
-                "Family support sessions",
-                "Aftercare planning",
+                "Expert Counselling",
+                "Supportive Rehabilitation Programs",
+                "Family Support Session",
+                "Postcare Planning",
               ],
             },
             {
-              title: "Old Age Home Care",
+              title: "Elderly Care Services",
               description:
-                "Our elder care service provides a safe and supportive living space for people who need help with daily routines. We focus on dignity, comfort, and quality of life.",
+                "Our old age home in Patna provides a safe and supportive living environment for senior persons who require support in daily activities. Primarily, our Vridh Ashram in Patna prioritises credible, comfortable, compassionate care for the elderly, ensuring a better quality of life.",
               icon: Home,
               link: "/adult-home-care",
               features: [
-                "24/7 personalized care",
-                "Safe living environment",
-                "Medical assistance",
-                "Emotional support",
+                "Secure Living Space",
+                "Medical Assistance",
+                "Emotional Care",
+                "24/7 Personalised Care",
               ],
             },
           ],
@@ -46,32 +46,32 @@ const ServicesSection = () => {
           badge: "हमारी सेवाएं",
           title: "हम कैसे मदद करते हैं",
           description:
-            "मुश्किल समय में हम ऐसी सेवाएं देते हैं जो सम्मान बनाए रखें और सुधार की राह आसान करें।",
+            "पटना में नशा मुक्ति केंद्र एक भरोसेमंद संस्था के रूप में हर कठिन परिस्थिति में आपके साथ खड़ी रहती है और सहयोग, उपचार और देखभाल के साथ जीवन को नई दिशा देने में मदद करती है।",
           services: [
             {
               title: "नशा मुक्ति केंद्र",
               description:
-                "हमारा नशा मुक्ति और पुनर्वास केंद्र नशे की लत से बाहर आने वाले लोगों को पूरा सहारा देता है। यहां सुरक्षित, शांत और सम्मानजनक माहौल में सुधार पर काम किया जाता है।",
+                "हमारा पटना नशा इलाज केंद्र एवं पुनर्वास सहायता नशे की लत से जूझ रहे व्यक्तियों को संपूर्ण सहयोग प्रदान करने के लिए समर्पित है। यहाँ हम एक सुरक्षित, शांत और सम्मानजनक वातावरण में उपचार और सुधार को प्राथमिकता देते हैं, ताकि हर व्यक्ति एक नई और बेहतर शुरुआत कर सके।",
               icon: HeartHandshake,
               link: "/nasha-mukti-kendra",
               features: [
-                "विशेषज्ञ काउंसलिंग",
-                "सही पुनर्वास कार्यक्रम",
-                "परिवार के साथ सत्र",
-                "आगे की देखभाल की योजना",
+                "विशेषज्ञ परामर्श",
+                "सहायक पुनर्वास कार्यक्रम",
+                "परिवार सहयोग सत्र",
+                "पुनः देखभाल योजना",
               ],
             },
             {
               title: "बुजुर्ग देखभाल सेवा",
               description:
-                "हमारी बुजुर्ग देखभाल सेवा उन लोगों के लिए सुरक्षित और सहायक रहने की जगह देती है जिन्हें रोजमर्रा के कामों में मदद चाहिए। हम आराम, सम्मान और अच्छी देखभाल पर ध्यान देते हैं।",
+                "पटना स्थित हमारा वृद्धाश्रम उन वरिष्ठ नागरिकों के लिए एक सुरक्षित और सहायक निवास प्रदान करता है, जिन्हें दैनिक गतिविधियों में सहायता की आवश्यकता होती है। हम विश्वसनीय, आरामदायक और करुणामय देखभाल को प्राथमिकता देते हैं, ताकि हर बुजुर्ग को बेहतर जीवन मिल सके।",
               icon: Home,
               link: "/adult-home-care",
               features: [
-                "24/7 व्यक्तिगत देखभाल",
-                "सुरक्षित रहने का माहौल",
+                "सुरक्षित वातावरण",
                 "चिकित्सीय सहायता",
-                "भावनात्मक सहारा",
+                "भावनात्मक देखभाल",
+                "24/7 व्यक्तिगत देखभाल",
               ],
             },
           ],

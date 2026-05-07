@@ -8,89 +8,90 @@ const WhyChooseUs = () => {
   const content =
     language === "en"
       ? {
-          badge: "Why Choose Us",
+          badge: "Why Choose Us?",
           title: "What Makes Us Different",
           description:
-            "Our care goes beyond basic support. We create an environment that helps healing grow and positive change last.",
+            "What we do is not just about basic support. We have developed a nurturing environment that empowers recovery and ensures long-lasting positive change.",
           reasons: [
             {
               icon: Heart,
-              title: "NGO-Based Service",
+              title: "Care-First Approach",
               description:
-                "A non-profit approach that keeps care genuine and people-first.",
+                "We prioritise people over profit, ensuring precise care and individual needs at the forefront.",
             },
             {
               icon: Shield,
-              title: "Safe & Respectful",
+              title: "Secure & Respectful Environment",
               description:
-                "A protected environment where dignity and privacy matter.",
+                "We provide a safe and secure space where every person feels valued and protected.",
             },
             {
               icon: Clock,
               title: "24/7 Support",
               description:
-                "Round-the-clock care and assistance whenever needed.",
+                "We offer round-the-clock service to help whenever you require our assistance.",
             },
             {
               icon: Award,
               title: "Experienced Team",
               description:
-                "Dedicated professionals with years of compassionate service.",
+                "Our expert team of caregivers brings valuable experience, ensuring high-quality care.",
             },
             {
               icon: Users,
               title: "Family Involvement",
               description:
-                "We encourage families to stay involved in the healing journey.",
+                "During the recovery journey, we go along with family, providing quality support and building trust.",
             },
             {
               icon: Leaf,
-              title: "Long-term Wellbeing",
+              title: "Long-Term Well-Being",
               description:
-                "We focus on steady recovery and lasting positive change.",
+                "We emphasise sustainable recovery and lasting positive change, ensuring a better quality of life.",
             },
           ],
         }
       : {
-          badge: "हमें क्यों चुनें",
-          title: "हमारी खास बात क्या है",
+          badge: "हमें क्यों चुनें?",
+          title: "हमारी खासियत क्या है",
           description:
-            "हमारी सेवा सिर्फ सामान्य देखभाल तक सीमित नहीं है। हम ऐसा माहौल बनाते हैं जो सुधार को मजबूत करे और अच्छा बदलाव लंबे समय तक बनाए रखे।",
+            "हमारी सेवाएं केवल सामान्य देखभाल तक सीमित नहीं हैं। हमने एक ऐसा सहयोगी वातावरण विकसित किया है जो सुधार को मजबूत बनाता है और लंबे समय तक सकारात्मक बदलाव सुनिश्चित करता है।",
           reasons: [
             {
               icon: Heart,
-              title: "सेवा संस्था आधारित",
+              title: "देखभाल-प्रथम दृष्टिकोण",
               description:
-                "हम लाभ नहीं, सच्ची देखभाल और लोगों की जरूरत को पहले रखते हैं।",
+                "हम लाभ से पहले लोगों को प्राथमिकता देते हैं, ताकि हर व्यक्ति की जरूरत के अनुसार सही और व्यक्तिगत देखभाल मिल सके।",
             },
             {
               icon: Shield,
-              title: "सुरक्षित और सम्मानजनक",
+              title: "सुरक्षित और सम्मानजनक वातावरण",
               description:
-                "ऐसा माहौल जहां सुरक्षा, सम्मान और निजता का ध्यान रखा जाता है।",
+                "हम एक ऐसा सुरक्षित और संरक्षित स्थान प्रदान करते हैं, जहां हर व्यक्ति खुद को सम्मानित और सुरक्षित महसूस करता है।",
             },
             {
               icon: Clock,
-              title: "24/7 सहारा",
-              description: "जब भी जरूरत हो, देखभाल और मदद उपलब्ध रहती है।",
+              title: "24/7 सहायता",
+              description:
+                "हम हर समय उपलब्ध रहते हैं, ताकि जब भी आपको जरूरत हो, तुरंत सहायता मिल सके।",
             },
             {
               icon: Award,
               title: "अनुभवी टीम",
               description:
-                "हमारी समर्पित टीम के पास सेवा और देखभाल का अच्छा अनुभव है।",
+                "हमारी विशेषज्ञ टीम का अनुभव उच्च गुणवत्ता वाली देखभाल सुनिश्चित करता है।",
             },
             {
               icon: Users,
               title: "परिवार की भागीदारी",
               description:
-                "हम सुधार की यात्रा में परिवार को साथ लेकर चलने पर जोर देते हैं।",
+                "सुधार की यात्रा में हम परिवार को साथ लेकर चलते हैं, जिससे बेहतर सहयोग और विश्वास बनता है।",
             },
             {
               icon: Leaf,
-              title: "लंबे समय का भला",
+              title: "दीर्घकालिक कल्याण",
               description:
-                "हम स्थिर सुधार और अच्छे बदलाव को लंबे समय तक बनाए रखने पर काम करते हैं।",
+                "हम स्थायी सुधार और लंबे समय तक सकारात्मक बदलाव पर ध्यान देते हैं, ताकि बेहतर जीवन गुणवत्ता सुनिश्चित हो सके।",
             },
           ],
         };

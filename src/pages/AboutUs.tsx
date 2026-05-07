@@ -14,6 +14,8 @@ import aboutTeamImage from "@/assets/about-team.jpg";
 import heroImage from "@/assets/hero-image.jpg";
 import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/context/LanguageContext";
+import Seo from "@/components/Seo";
+import { seoData } from "@/constants/seo";
 
 const AboutUs = () => {
   const { language } = useLanguage();
@@ -26,59 +28,59 @@ const AboutUs = () => {
             badge: "About Us",
             title: "Who We Are",
             description:
-              "Navkiran Seva Sadan is a non-profit organization committed to recovery, dignity, and a better quality of life.",
+              "Navkiran Seva Sadan, the best nasha mukti kendra in Patna, is a service organisation dedicated to helping people recover, improve, and move toward a better life.",
           },
           missionVision: {
             imageAlt: "Dedicated team at Navkiran Seva Sadan",
             missionTitle: "Our Mission",
             missionDescription:
-              "To provide compassionate care, rehabilitation, and support to people in need, helping them rebuild life with dignity and hope in a safe and nurturing environment.",
+              "Providing compassionate care, rehabilitation, and support to those who need it most, helping them live a better quality of life with dignity. Our goal is to develop a safe and caring environment where recovery is both possible and sustainable.",
             visionTitle: "Our Vision",
             visionDescription:
-              "A society where every individual has access to quality care and the chance to live with dignity, free from addiction and supported in daily life when needed.",
+              "Creating a society where every individual receives the compassionate care they deserve, and can live an addiction-free life with dignity and hope. We envision a society where appropriate support is always available when needed, and every life is empowered and valued.",
           },
           story: {
             badge: "Our Story",
-            title: "A Journey of Compassion",
+            title: "A Journey Rooted In Empathy",
             paragraphs: [
-              "Navkiran Seva Sadan began with a simple vision: to serve people who need support the most. Our journey started over a decade ago when we saw the growing need for compassionate care in our community.",
-              "What began as a small initiative has grown into a complete care organization offering de-addiction rehabilitation and old age home care services. Over the years, we have supported more than 500 individuals and their families.",
-              "Today, we continue to grow while staying rooted in compassion, dignity, and community service. Every life we touch strengthens our commitment to make a meaningful difference.",
+              "Navkiran Seva Sadan started with a simple yet powerful idea to help those who need it most. Almost a decade ago, we realised a growing need in our society for services regarding drug de-addiction and elderly care.",
+              "Started as a small initiative, it has now developed into an organisation (Nasha Mukti Kendra Patna), providing trusted and reliable services for drug rehabilitation and elderly care. During the years, we have helped over 500 people and their families, resulting in a better quality of life.",
+              "Still moving forward, our services grow while holding close kindness, dignity, and everyday care for others. Every person we reach adds quiet strength along the way.",
             ],
           },
           values: {
             badge: "Our Values",
             title: "What Guides Us",
             description:
-              "These values shape every step we take at Navkiran Seva Sadan.",
+              "At Navkiran Seva Sadan, the old age home in Patna, these core values build the foundation for everything we do.",
             items: [
               {
                 title: "Compassion",
                 description:
-                  "We treat every person with empathy, understanding, and genuine care.",
+                  "Treating every person with empathy, understanding, and genuine care.",
               },
               {
                 title: "Dignity",
                 description:
-                  "We protect the dignity and respect of every individual we serve.",
+                  "Honouring the individuality, dignity, and self-worth of every person.",
               },
               {
-                title: "Community",
+                title: "Togetherness",
                 description:
-                  "We believe support from the community helps healing and growth.",
+                  "Believing in the strength of community support to improve and encourage growth.",
               },
               {
                 title: "Service",
                 description:
-                  "We are committed to selfless service for the betterment of society.",
+                  "Dedicated to selfless service for the betterment of society and positive change.",
               },
             ],
           },
           team: {
             badge: "Our Team",
-            title: "Dedicated Professionals",
+            title: "Dedicated Expert",
             description:
-              "Our caring team is committed to delivering high-quality support and thoughtful care.",
+              "Our professional team of caregivers is dedicated to providing quality care and reliable support.",
             items: [
               {
                 role: "Founder & Director",
@@ -112,58 +114,59 @@ const AboutUs = () => {
             badge: "हमारे बारे में",
             title: "हम कौन हैं",
             description:
-              "नवकिरण सेवा सदन एक सेवा संस्था है जो लोगों को सुधार, सम्मान और बेहतर जीवन की ओर बढ़ने में मदद करती है।",
+              "उल्लेखनीय बिहार नशा मुक्ति सेवा केंद्र के रूप में, नवकिरण सेवा सदन एक सेवा-समर्पित संस्था है, जो लोगों को सुधार, पुनर्वास और बेहतर जीवन की ओर आगे बढ़ने में सहायता करती है।",
           },
           missionVision: {
             imageAlt: "नवकिरण सेवा सदन की समर्पित टीम",
             missionTitle: "हमारा मिशन",
             missionDescription:
-              "जरूरतमंद लोगों को देखभाल, पुनर्वास और सहारा देना ताकि वे सम्मान और उम्मीद के साथ जीवन फिर से बना सकें। हमारा लक्ष्य सुरक्षित और स्नेहपूर्ण माहौल देना है जहां सुधार आगे बढ़े।",
-            visionTitle: "हमारा विजन",
+              "हमारा उद्देश्य जरूरतमंद लोगों को करुणामय देखभाल, प्रभावी पुनर्वास और निरंतर सहयोग प्रदान करना है, ताकि वे सम्मान के साथ बेहतर जीवन जी सकें। हमारा लक्ष्य एक ऐसा सुरक्षित और स्नेहपूर्ण वातावरण तैयार करना हैं, जहाँ सुधार न केवल संभव हो, बल्कि लंबे समय तक कायम रह सके।",
+            visionTitle: "हमारा विज़न",
             visionDescription:
-              "ऐसा समाज जहां हर व्यक्ति को अच्छी देखभाल मिले, वह सम्मान से जी सके, नशे से मुक्त जीवन जी सके और जरूरत पड़ने पर सही सहारा पा सके।",
+              "हम एक ऐसे समाज की कल्पना करते हैं, जहाँ हर व्यक्ति को आवश्यक और संवेदनशील सहारा मिले, वह नशामुक्त जीवन जी सके और सम्मान व उम्मीद के साथ आगे बढ़ सके। हमारा लक्ष्य है कि हर व्यक्ति को सही समय पर सही सहयोग मिले और हर जीवन को सशक्त एवं मूल्यवान बनाया जाए।",
           },
           story: {
             badge: "हमारी कहानी",
-            title: "सहानुभूति की यात्रा",
+            title: "सहानुभूति से शुरू हुई एक यात्रा",
             paragraphs: [
-              "नवकिरण सेवा सदन की शुरुआत एक सरल सोच से हुई: उन लोगों की सेवा करना जिन्हें सबसे ज्यादा सहारे की जरूरत है। करीब एक दशक पहले हमने अपने आसपास देखभाल की बढ़ती जरूरत को महसूस किया।",
-              "जो काम एक छोटे प्रयास से शुरू हुआ था, आज वह नशा मुक्ति पुनर्वास और बुजुर्ग देखभाल जैसी सेवाएं देने वाली संस्था बन चुका है। इन वर्षों में हमने 500 से अधिक लोगों और उनके परिवारों तक सहारा पहुंचाया है।",
-              "आज भी हम अपनी सेवाएं बढ़ा रहे हैं, लेकिन करुणा, सम्मान और समाज सेवा के मूल भाव को साथ लेकर। हर जीवन जिसे हम छूते हैं, हमें और मजबूत बनाता है।",
+              "नवकिरण सेवा सदन की शुरुआत एक सरल लेकिन मजबूत उद्देश्य के साथ हुई, उन लोगों की मदद करना जिन्हें इसकी सबसे अधिक आवश्यकता है। लगभग एक दशक पहले, हमने समाज में नशा मुक्ति और बुजुर्ग देखभाल सेवाओं की बढ़ती जरूरत को महसूस किया।",
+              "एक छोटे से प्रयास के रूप में शुरू होकर, आज यह एक विश्वसनीय संस्था के रूप में विकसित हो चुका है, जो नशा मुक्ति और बुजुर्ग देखभाल की भरोसेमंद सेवाएं प्रदान कर रही है। इन वर्षों में, हमने 500 से अधिक लोगों और उनके परिवारों की सहायता की है, जिससे उनके जीवन की गुणवत्ता में सकारात्मक बदलाव आया है।",
+              "आज भी हम आगे बढ़ते हुए अपने मूल्यों: करुणा, सम्मान और सेवा को बनाए रखते हैं। हर व्यक्ति की मदद करना हमें और मजबूत बनाता है और हमारी प्रेरणा को बढ़ाता है।",
             ],
           },
           values: {
             badge: "हमारे मूल्य",
-            title: "क्या हमें दिशा देता है",
-            description: "ये मूल्य नवकिरण सेवा सदन के हर काम की नींव हैं।",
+            title: "हमें दिशा देने वाले सिद्धांत",
+            description:
+              "नवकिरण सेवा सदन (नशा छोड़ने का हॉस्पिटल पटना) में ये प्राथमिक मूल्य हमारे हर कार्य की नींव हैं।",
             items: [
               {
-                title: "सहानुभूति",
+                title: "करुणा",
                 description:
-                  "हम हर व्यक्ति के साथ समझ, अपनापन और सच्ची देखभाल से पेश आते हैं।",
+                  "हर व्यक्ति के साथ सहानुभूति, समझ और सच्ची देखभाल के साथ व्यवहार करना।",
               },
               {
-                title: "सम्मान",
+                title: "गरिमा",
                 description:
-                  "हम हर व्यक्ति की गरिमा और सम्मान को बनाए रखते हैं।",
+                  "हर व्यक्ति की पहचान, सम्मान और आत्ममूल्य को बनाए रखना।",
               },
               {
                 title: "साथ",
                 description:
-                  "हमें विश्वास है कि समुदाय का साथ सुधार और विकास में मदद करता है।",
+                  "समुदाय और सहयोग की शक्ति में विश्वास रखते हुए, विकास और सुधार को बढ़ावा देना।",
               },
               {
                 title: "सेवा",
                 description:
-                  "हम समाज के भले के लिए निस्वार्थ सेवा के लिए समर्पित हैं।",
+                  "समाज के कल्याण और सकारात्मक परिवर्तन के लिए निःस्वार्थ सेवा के प्रति समर्पण।",
               },
             ],
           },
           team: {
             badge: "हमारी टीम",
-            title: "समर्पित विशेषज्ञ",
+            title: "समर्पित विशेषज्ञ टीम",
             description:
-              "हमारी स्नेहपूर्ण टीम अच्छी देखभाल और भरोसेमंद सहारा देने के लिए समर्पित है।",
+              "हमारी अनुभवी और पेशेवर टीम गुणवत्तापूर्ण देखभाल और भरोसेमंद सहयोग प्रदान करने के लिए पूरी तरह समर्पित है।",
             items: [
               {
                 role: "संस्थापक और निदेशक",
@@ -201,6 +204,7 @@ const AboutUs = () => {
 
   return (
     <Layout>
+      <Seo {...seoData.about} />
       <section className="relative overflow-hidden py-20 md:py-28">
         <div className="absolute inset-0">
           <img

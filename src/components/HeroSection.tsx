@@ -12,10 +12,10 @@ const HeroSection = () => {
       ? {
           imageAlt: "Compassionate care and support at Navkiran Seva Sadan",
           badge: "Non-Profit Organization",
-          title: "Restoring Hope, ",
-          highlight: "Healing Lives",
+          title: "A New Beginning ",
+          highlight: "Towards A Better Life",
           description:
-            "Navkiran Seva Sadan supports individuals with compassionate care, rehabilitation, and dignity. Together, we help rebuild lives and bring hope back.",
+            "Navkiran Seva Sadan helps individuals overcome addiction and provide compassionate care for the elderly, as everyone deserves proper care, dignity, and a second chance in life.",
           primaryCta: "Explore Our Services",
           secondaryCta: "Know More About Us",
           stats: [
@@ -28,17 +28,17 @@ const HeroSection = () => {
       : {
           imageAlt: "नवकिरण सेवा सदन में देखभाल और सहारा",
           badge: "सेवा संस्था",
-          title: "उम्मीद लौटाएं, ",
-          highlight: "जीवन संवारें",
+          title: "एक नई शुरुआत ",
+          highlight: "बेहतर जीवन कि ओर",
           description:
-            "नवकिरण सेवा सदन लोगों को देखभाल, पुनर्वास और सम्मान के साथ सहारा देता है। हम मिलकर जीवन को फिर से संभालने और उम्मीद वापस लाने का काम करते हैं।",
+            "नवकिरण सेवा सदन लोगों को नशे की लत से बाहर निकलने में मदद करता है और बुजुर्गो के लिए करुणामई सेवा प्रदान करता है l क्यूंकि हर व्यक्ति सही देखवाल, सम्मान, और जीवन में एक नई शुरुआत का अधिकार रखता है |",
           primaryCta: "हमारी सेवाएं देखें",
           secondaryCta: "हमारे बारे में जानें",
           stats: [
-            { number: "500+", label: "लोगों तक पहुंच" },
-            { number: "10+", label: "सेवा के साल" },
-            { number: "24/7", label: "देखभाल और सहारा" },
-            { number: "100%", label: "सेवा भाव" },
+            { number: "500+", label: "जीवनों को नया सहारा" },
+            { number: "10+", label: "सेवा के वर्ष" },
+            { number: "24/7", label: "देखभाल और सहायता" },
+            { number: "100%", label: "करुणा के साथ सेवा" },
           ],
         };
 

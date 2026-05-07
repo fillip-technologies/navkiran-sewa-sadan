@@ -9,22 +9,22 @@ const CTASection = () => {
   const content =
     language === "en"
       ? {
-          title: "Ready to Take the First Step?",
+          title: "Take the First Step Toward a Better Tomorrow",
           description:
-            "Whether you are looking for help for yourself or a loved one, we are here to support you. Reach out to learn more or begin your journey toward healing.",
+            "If you or someone you care about requires support, you do not need to face it alone; we are here to help you every step of the way. Connect with us today and take the first step towards a comfortable, healing, and fruitful journey.",
           primaryCta: "Contact Us Today",
           secondaryCta: "View Our Services",
           footerText:
-            "Your journey to recovery and dignity starts with one step. Let us walk beside you.",
+            "The journey toward recovery and dignity starts with one small step.",
         }
       : {
-          title: "पहला कदम उठाने के लिए तैयार हैं?",
+          title: "एक बेहतर कल की ओर पहला कदम उठाएं",
           description:
-            "चाहे आपको अपने लिए मदद चाहिए या किसी अपने के लिए, हम आपके साथ हैं। हमारी सेवाओं के बारे में जानने या सुधार की शुरुआत करने के लिए संपर्क करें।",
+            "यदि आपको या आपके किसी अपने को सहायता की आवश्यकता है, तो हम हर कदम पर आपके साथ हैं। आज ही हमसे जुड़ें और एक आरामदायक और बेहतर जीवन की यात्रा की शुरुआत करें।",
           primaryCta: "आज ही संपर्क करें",
           secondaryCta: "हमारी सेवाएं देखें",
           footerText:
-            "सुधार और सम्मान की राह एक कदम से शुरू होती है। हम आपके साथ चलने के लिए तैयार हैं।",
+            "सुधार और बेहतर जीवन की ओर यात्रा एक छोटे से कदम से शुरू होती है।",
         };
 
   return (
