@@ -12,7 +12,7 @@ const AboutSection = () => {
           paragraphOne:
             "Navkiran Seva Sadan is a dedicated service-oriented center that assists individuals in recovering from addiction and provides elderly care services, encouraging improved and better quality of life. We are committed to serving individuals both physically and emotionally with compassion and a strong sense of social responsibility.",
           paragraphTwo:
-            "As the best nasha mukti kendra in Patna, our team of seasoned caregivers takes a supportive, compassionate approach to restore hope, health, and happiness in everyoneâ€™s life.",
+            "As the best Rehabilitation Center in Patna, our team of seasoned caregivers takes a supportive, compassionate approach to restore hope, health, and happiness in everyone’s life.",
           values: [
             {
               title: "Empathy",

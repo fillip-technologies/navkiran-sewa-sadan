@@ -32,7 +32,7 @@ const Footer = () => {
           getInTouch: "Get In Touch",
           supportText:
             "Reach out to us for support or to learn more about our services.",
-          addressLines: ["Navkiran Seva Sadan", "Patna, Bihar, India"],
+          addressLines: ["Navkiran seva sadan, anand bihar colony opposite to bharat petroleum boothnath patna -26, Bihar "],
           copyright: "Navkiran Seva Sadan. All rights reserved.",
           madeWith: "Made with",
           madeForHumanity: "for humanity.",
@@ -53,7 +53,7 @@ const Footer = () => {
           getInTouch: "संपर्क में रहें",
           supportText:
             "मदद पाने या हमारी सेवाओं के बारे में जानने के लिए हमसे संपर्क करें।",
-          addressLines: ["नवकिरण सेवा सदन", "पटना, बिहार, भारत"],
+          addressLines: ["नवकिरण सेवा सदन, आनंद बिहार कॉलोनी, भारत पेट्रोलियम बूथनाथ के सामने, पटना-26, बिहार"],
           copyright: "नवकिरण सेवा सदन। सभी अधिकार सुरक्षित।",
           madeWith: "दिल से",
           madeForHumanity: "मानवता की सेवा के लिए।",

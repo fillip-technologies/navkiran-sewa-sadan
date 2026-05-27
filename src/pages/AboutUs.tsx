@@ -10,7 +10,7 @@ import {
   Users,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import aboutTeamImage from "@/assets/about-team.jpg";
+import aboutTeamImage from "@/assets/team-image.jpeg";
 import heroImage from "@/assets/hero-image.jpg";
 import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/context/LanguageContext";
@@ -28,7 +28,7 @@ const AboutUs = () => {
             badge: "About Us",
             title: "Who We Are",
             description:
-              "Navkiran Seva Sadan, the best nasha mukti kendra in Patna, is a service organisation dedicated to helping people recover, improve, and move toward a better life.",
+              "Navkiran Seva Sadan, the trusted and affordable Rehab Center in Patna, is a service organisation dedicated to helping people recover, improve, and move toward a better life.",
           },
           missionVision: {
             imageAlt: "Dedicated team at Navkiran Seva Sadan",
@@ -43,7 +43,7 @@ const AboutUs = () => {
             badge: "Our Story",
             title: "A Journey Rooted In Empathy",
             paragraphs: [
-              "Navkiran Seva Sadan started with a simple yet powerful idea to help those who need it most. Almost a decade ago, we realised a growing need in our society for services regarding drug de-addiction and elderly care.",
+              "Navkiran Seva Sadan (Rehabilitation Center in Patna) started with a simple yet powerful idea to help those who need it most. Almost a decade ago, we realised a growing need in our society for services regarding drug de-addiction and elderly care.",
               "Started as a small initiative, it has now developed into an organisation (Nasha Mukti Kendra Patna), providing trusted and reliable services for drug rehabilitation and elderly care. During the years, we have helped over 500 people and their families, resulting in a better quality of life.",
               "Still moving forward, our services grow while holding close kindness, dignity, and everyday care for others. Every person we reach adds quiet strength along the way.",
             ],
@@ -52,7 +52,7 @@ const AboutUs = () => {
             badge: "Our Values",
             title: "What Guides Us",
             description:
-              "At Navkiran Seva Sadan, the old age home in Patna, these core values build the foundation for everything we do.",
+              "At Navkiran Seva Sadan, the best old age home in Patna, these core values build the foundation for everything we do.",
             items: [
               {
                 title: "Compassion",

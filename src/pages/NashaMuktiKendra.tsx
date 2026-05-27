@@ -15,11 +15,11 @@ import {
 import type { CSSProperties } from "react";
 import { Link } from "react-router-dom";
 import FacilityGallery from "@/components/FacilityGallery";
-import rehabCenterImage from "@/assets/rehab-center.jpg";
-import galleryCounseling from "@/assets/gallery-counseling.jpg";
-import galleryGroupTherapy from "@/assets/gallery-group-therapy.jpg";
-import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
-import galleryExercise from "@/assets/gallery-exercise.jpg";
+import rehabCenterImage from "@/assets/navkiran-7.jpeg";
+import galleryCounseling from "@/assets/team-image.jpeg";
+import galleryGroupTherapy from "@/assets/navkiran-4.jpeg";
+import galleryOutdoor from "@/assets/navkiran-8.jpeg";
+import galleryExercise from "@/assets/location-image.jpeg";
 import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/context/LanguageContext";
 import Seo from "@/components/Seo";
@@ -36,7 +36,7 @@ const NashaMuktiKendra = () => {
             badge: "De-Addiction & Rehabilitation",
             title: "Drug De-Addiction Center",
             description:
-              "Healing begins when someone feels safe enough to speak their truth. We provide a caring and non-judgmental space, where individuals can overcome addiction and transform their lives. Through professional guidance and personalised care, our nasha mukti kendra Patna empowers individuals to regain hope, confidence, and a sense of purpose.",
+              "Healing begins when someone feels safe enough to speak their truth. We provide a caring and non-judgmental space, where individuals can overcome addiction and transform their lives. Through professional guidance and personalised care, our Rehab Center in Patna empowers individuals to regain hope, confidence, and a sense of purpose.",
             primaryCta: "Get Help Now",
             secondaryCta: "Learn About Our Approach",
           },
@@ -44,7 +44,7 @@ const NashaMuktiKendra = () => {
             badge: "Our Approach",
             title: "Compassionate Care for Lasting Recovery",
             description:
-              "Our setting feels steady, built so growth can take root slowly. Body, thoughts, feelings - each part gets space to shift without pressure. Hence, progress shows up quietly, shaped by consistent and personalised care.",
+              "Our setting feels steady, built so growth can take root slowly. Body, thoughts, feelings - each part gets space to shift without pressure. Hence, progress shows up quietly, shaped by consistent and personalised care. If you are exploring the best Alcohol Rehab Center near me, Navkiran Seva Sadan is the best option.",
             features: [
               {
                 title: "Expert Counselling",
@@ -54,7 +54,7 @@ const NashaMuktiKendra = () => {
               {
                 title: "Supportive Rehabilitation Program",
                 description:
-                  "Being the best nasha mukti kendra in Patna, our structured routine is designed to rebuild confidence, restore stability, helping individual take control of their lives.",
+                  "Exploring the best nasha mukti kendra near me, our structured rehab routine is designed to rebuild confidence, restore stability, helping individual take control of their lives.",
               },
               {
                 title: "Family Support",
@@ -79,10 +79,10 @@ const NashaMuktiKendra = () => {
             ],
           },
           journey: {
-            badge: "Recovery Journey",
+            badge: "Patient Pickup Facility",
             title: "Your Path Toward a New Life",
             description:
-              "Recovery takes time; it is a long journey. Our nasha mukti kendra Patna supports a step-by-step process, ensuring lasting transformation, stability, and a confident return to life.",
+              "Getting here should never be a problem. Our pickup service covers the district along with surrounding spots, so people arrive relaxed. ",
             steps: [
               "Early Assessment and personalised care",
               "Safe and supervised detox",
@@ -105,23 +105,23 @@ const NashaMuktiKendra = () => {
             images: [
               {
                 alt: "Meditation and wellness room",
-                title: "Meditation Room",
+                title: "",
               },
               {
                 alt: "Counseling session",
-                title: "Counselling session",
+                title: "",
               },
               {
                 alt: "Group therapy session",
-                title: "Group Therapy",
+                title: "",
               },
               {
                 alt: "Outdoor garden area",
-                title: "Garden and Open Space",
+                title: "",
               },
               {
                 alt: "Exercise and fitness area",
-                title: "Fitness Room",
+                title: "",
               },
             ],
           },

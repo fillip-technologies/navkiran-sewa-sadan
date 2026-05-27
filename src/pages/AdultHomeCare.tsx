@@ -17,12 +17,12 @@ import {
 import { Link } from "react-router-dom";
 import type { CSSProperties } from "react";
 import FacilityGallery from "@/components/FacilityGallery";
-import adultCareImage from "@/assets/adult-care.jpg";
-import galleryBedroom from "@/assets/gallery-bedroom.jpg";
-import galleryCounseling from "@/assets/gallery-counseling.jpg";
-import galleryDining from "@/assets/gallery-dining.jpg";
-import galleryOutdoor from "@/assets/gallery-outdoor.jpg";
-import galleryRecreation from "@/assets/gallery-recreation.jpg";
+import adultCareImage from "@/assets/navkiran-6.jpeg";
+import galleryBedroom from "@/assets/navkiran-5.jpeg";
+import galleryCounseling from "@/assets/location-image.jpeg";
+import galleryDining from "@/assets/location-2.jpeg";
+import galleryOutdoor from "@/assets/team-image.jpeg";
+import galleryRecreation from "@/assets/navkiran-6.jpeg";
 import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/context/LanguageContext";
 import Seo from "@/components/Seo";
@@ -39,7 +39,7 @@ const AdultHomeCare = () => {
           badge: "Care & Assistance",
           title: "Elderly Care Service",
           description:
-            "Every day here feels like home, built around people who deserve gentle support. Comfort comes first - so does respect, staying safe, and feeling empowered. With a well-structured old age home in Patna, care shows up quietly, exactly when needed.",
+            "At all times, this place is home - created with the intention of providing gentle support to those who need it. Our primary focus is on providing comfort along with respect, safety and empowerment. These values are reflected through our affordable old age home in Patna, both in its physical structure and by staff members who provide quiet assistance whenever assistance is needed.",
           primaryCta: "Inquire About Care",
           secondaryCta: "Learn About Our Care Services",
         },
@@ -79,13 +79,17 @@ const AdultHomeCare = () => {
               description:
                 "Meaningful activities and social interaction for uplifting mood and promoting overall happiness.",
             },
+            {
+              title: "Patients Pickup Facility",
+              description:"Safe and reliable transportation for patients across districts, making the admission process smooth, easy, and worry-free. ",
+            },
           ],
         },
         whoWeServe: {
           badge: "Who We Serve",
           title: "Compassionate Care for Those Who Need It Most",
           description:
-            "Within our Vridh Ashram in Patna, care services are provided to people who need daily support but deserve dignity and a good life.",
+            "Within our Senior Citizen Home in Patna, care services are provided to people who need daily support but deserve dignity and a good life.",
           items: [
             "Elderly people who need daily assistance",
             "Adults with physical problems",
@@ -100,36 +104,36 @@ const AdultHomeCare = () => {
         gallery: {
           title: "Our Care Home Facilities",
           subtitle:
-            "Explore our comfortable environment designed with safety, respect, and happiness in mind.",
+            "Explore our comfortable environment at a senior care home in Patna, designed with safety, respect, and happiness in mind.",
           images: [
             {
               alt: "Compassionate care for adults",
-              title: "Personalized Care",
+              title: "",
             },
             {
               alt: "Comfortable bedroom",
-              title: "Private Rooms",
+              title: "",
             },
             {
               alt: "Dining area",
-              title: "Community Dining",
+              title: "",
             },
             {
               alt: "Recreation room",
-              title: "Recreation Activities",
+              title: "",
             },
             {
               alt: "Outdoor garden",
-              title: "Garden & Outdoor Space",
+              title: "",
             },
             {
               alt: "Healthcare consultation",
-              title: "Medical Support",
+              title: "",
             },
           ],
         },
         commitment: {
-          title: "Our Commitment to Your Loved Ones",
+          title: "Our responsibility to your loved ones",
           items: [
             {
               title: "Respect",

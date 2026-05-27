@@ -12,12 +12,12 @@ const ServicesSection = () => {
           badge: "Our Services",
           title: "How We Help",
           description:
-            "Renowned as the best Nasha Mukti Kendra in Patna, we stand by you in challenging times, supporting compassionate care, healing, and a loving life with dignity.",
+            "Renowned as the best Drug Rehab Center in Patna, we stand by you in challenging times, supporting compassionate care, healing, and a loving life with dignity.",
           services: [
             {
               title: "Drug De-Addiction Center (Nasha Mukti Kendra)",
               description:
-                "Our nasha mukti kendra Patna and rehabilitation center is dedicated to providing complete support to individuals overcoming substance abuse. Here, we prioritise recovery in a safe, harmonious, and respectful environment.",
+                "Our Drug De addiction Center in Patna and rehabilitation center is dedicated to providing complete support to individuals overcoming substance abuse. Here, we prioritise recovery in a safe, harmonious, and respectful environment.",
               icon: HeartHandshake,
               link: "/nasha-mukti-kendra",
               features: [
@@ -30,7 +30,7 @@ const ServicesSection = () => {
             {
               title: "Elderly Care Services",
               description:
-                "Our old age home in Patna provides a safe and supportive living environment for senior persons who require support in daily activities. Primarily, our Vridh Ashram in Patna prioritises credible, comfortable, compassionate care for the elderly, ensuring a better quality of life.",
+                "As the best old age home in Patna, we provide a safe and supportive living environment for senior citizens who require assistance with daily activities. Primarily, our luxury old age home in Patna prioritises credible, comfortable, compassionate care for the elderly, ensuring a better quality of life.",
               icon: Home,
               link: "/adult-home-care",
               features: [
