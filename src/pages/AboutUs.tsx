@@ -45,7 +45,7 @@ const AboutUs = () => {
             paragraphs: [
               "Navkiran Seva Sadan (Rehabilitation Center in Patna) started with a simple yet powerful idea to help those who need it most. Almost a decade ago, we realised a growing need in our society for services regarding drug de-addiction and elderly care.",
               "Started as a small initiative, it has now developed into an organisation (Nasha Mukti Kendra Patna), providing trusted and reliable services for drug rehabilitation and elderly care. During the years, we have helped over 500 people and their families, resulting in a better quality of life.",
-              "Still moving forward, our services grow while holding close kindness, dignity, and everyday care for others. Every person we reach adds quiet strength along the way.",
+              "Still moving forward, our services at the affordable rehab center in Patna  grow while holding close kindness, dignity, and everyday care for others. Every person we reach adds quiet strength along the way.",
             ],
           },
           values: {
@@ -80,7 +80,7 @@ const AboutUs = () => {
             badge: "Our Team",
             title: "Dedicated Expert",
             description:
-              "Our professional team of caregivers is dedicated to providing quality care and reliable support.",
+              "Our professional team of caregivers  at the affordable rehab center in Patna is dedicated to providing quality care and reliable support.",
             items: [
               {
                 role: "Founder & Director",

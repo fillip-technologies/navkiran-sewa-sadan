@@ -11,7 +11,7 @@ const CTASection = () => {
       ? {
           title: "Take the First Step Toward a Better Tomorrow",
           description:
-            "If you or someone you care about requires support, you do not need to face it alone; we are here to help you every step of the way. Connect with us today and take the first step towards a comfortable, healing, and fruitful journey.",
+            "If you or someone you care about requires support, you do not need to face it alone; we are here to help you every step of the way at the best drug rehab center in patna. Connect with us today and take the first step towards a comfortable, healing, and fruitful journey.",
           primaryCta: "Contact Us Today",
           secondaryCta: "View Our Services",
           footerText:

@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
               icon: Shield,
               title: "Secure & Respectful Environment",
               description:
-                "We provide a safe and secure space where every person feels valued and protected.",
+                "As the best drug rehab center in Patna, We provide a safe and secure space where every person feels valued and protected.",
             },
             {
               icon: Clock,

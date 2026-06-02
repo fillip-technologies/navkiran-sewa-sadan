@@ -15,7 +15,7 @@ const HeroSection = () => {
           title: "A New Beginning ",
           highlight: "Towards A Better Life",
           description:
-            "Navkiran Seva Sadan helps individuals overcome addiction and provide compassionate care for the elderly, as everyone deserves proper care, dignity, and a second chance in life.",
+            "Navkiran Seva Sadan helps individuals overcome addiction and provide compassionate care for the elderly, as everyone deserves proper care, dignity, and a second chance in life. Welcome you to the best drug rehab center in Patna, where care feels like home.",
           primaryCta: "Explore Our Services",
           secondaryCta: "Know More About Us",
           stats: [

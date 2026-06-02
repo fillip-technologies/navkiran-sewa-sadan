@@ -69,7 +69,7 @@ const NashaMuktiKendra = () => {
               {
                 title: "24/7 Care & Support",
                 description:
-                  "When you reach out, someone will always be there to help. Night or day, we're ready to listen, guide, or simply sit with your concerns.",
+                  "When you reach out by exploring the best rehab center near me, someone will always be there to help. Night or day, we're ready to listen, guide, or simply sit with your concerns.",
               },
               {
                 title: "Postcare Planning",
@@ -82,7 +82,7 @@ const NashaMuktiKendra = () => {
             badge: "Patient Pickup Facility",
             title: "Your Path Toward a New Life",
             description:
-              "Getting here should never be a problem. Our pickup service covers the district along with surrounding spots, so people arrive relaxed. ",
+              "Recovery takes time; it is a long journey. Our De addiction Center in Patna supports a step-by-step process, ensuring lasting transformation, stability, and a confident return to life.",
             steps: [
               "Early Assessment and personalised care",
               "Safe and supervised detox",
@@ -101,7 +101,7 @@ const NashaMuktiKendra = () => {
           gallery: {
             title: "Our Rehabilitation Facilities",
             subtitle:
-              "Step into a calm, safe, and healing environment, designed for recovery and life transformation.",
+              "Searching for the best nasha mukti kendra near me, Step into a calm, safe, and healing environment, designed for recovery and life transformation.",
             images: [
               {
                 alt: "Meditation and wellness room",

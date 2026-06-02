@@ -64,65 +64,65 @@ const commonSchema = [
 
 export const seoData = {
   home: {
-    title: "पटना में नशा मुक्ति केंद्र एवं वृद्धाश्रम: नवकिरण सेवा सदन",
+    title: "Best Drug Rehab Center in Patna with Old Age Home Care",
     description:
-      "नवकिरण सेवा सदन पटना में नशा मुक्ति केंद्र और बुजुर्ग देखभाल सेवाएं प्रदान करने के लिए विख्यात है। यहाँ सुरक्षित वातावरण, स्नेहपूर्ण देखभाल और विशेषज्ञ सहायता उपलब्ध हैं।",
+      "Navkiran Seva Sadan offers a reliable Drug Rehab Center in Patna and an old-age home for compassionate care and rehabilitation, ensuring a healthier, dignified life.",
     keywords:
-      "पटना में नशा मुक्ति केंद्र, पटना नशा इलाज केंद्र, बिहार नशा मुक्ति सेवा केंद्र, पटना ड्रग रिहैब सेंटर",
+      "Drug Rehab Center in Patna, Drug De Addiction Center in Patna, best old age home in Patna, Rehabilitation Center in Patna, Luxury old age home in Patna",
     ogDescription:
-      "नवकिरण सेवा सदन पटना में नशा मुक्ति केंद्र और बुजुर्ग देखभाल सेवाएं प्रदान करने के लिए विख्यात है। यहाँ सुरक्षित वातावरण, स्नेहपूर्ण देखभाल और विशेषज्ञ सहायता उपलब्ध हैं।",
+      "Navkiran Seva Sadan offers a reliable Drug Rehab Center in Patna and an old-age home for compassionate care and rehabilitation, ensuring a healthier, dignified life.",
     twitterDescription:
-      "नवकिरण सेवा सदन पटना में नशा मुक्ति केंद्र और बुजुर्ग देखभाल सेवाएं प्रदान करने के लिए विख्यात है। यहाँ सुरक्षित वातावरण, स्नेहपूर्ण देखभाल और विशेषज्ञ सहायता उपलब्ध हैं।",
+      "Navkiran Seva Sadan offers a reliable Drug Rehab Center in Patna and an old-age home for compassionate care and rehabilitation, ensuring a healthier, dignified life.",
     url: absoluteUrl("/"),
     siteName: "navkiransevasadan",
     image: heroImage,
-    imageAlt: "पटना में नशा मुक्ति केंद्र एवं वृद्धाश्रम",
+    imageAlt: "Best Drug Rehab Center in Patna",
     schema: commonSchema,
   },
   about: {
-    title: "हमारे बारे में | बिहार नशा मुक्ति सेवा केंद्र और वृद्धाश्रम",
+    title: "About the Affordable Rehab Center in Patna: Navkiran Seva Sadan",
     description:
-      "नवकिरण सेवा सदन एक विश्वसनीय बिहार नशा मुक्ति सेवा केंद्र और वृद्धाश्रम है, जो करुणामय देखभाल, पुनर्वास और दीर्घकालिक सुधार के लिए समर्पित है।",
-    keywords: "बिहार नशा मुक्ति सेवा केंद्र, नशा छोड़ने का हॉस्पिटल पटना",
+      "Discover Navkiran Seva Sadan, an affordable Rehab Center in Patna, with an old-age home care, committed to compassionate care, recovery, and overall well-being.",
+    keywords: "Affordable Rehab Center in Patna,  Rehabilitation Center in Patna,  best old age home in Patna",
     ogDescription:
-      "नवकिरण सेवा सदन एक विश्वसनीय बिहार नशा मुक्ति सेवा केंद्र और वृद्धाश्रम है, जो करुणामय देखभाल, पुनर्वास और दीर्घकालिक सुधार के लिए समर्पित है।",
+      "Discover Navkiran Seva Sadan, an affordable Rehab Center in Patna, with an old-age home care, committed to compassionate care, recovery, and overall well-being.",
     twitterDescription:
-      "नवकिरण सेवा सदन एक विश्वसनीय बिहार नशा मुक्ति सेवा केंद्र और वृद्धाश्रम है, जो करुणामय देखभाल, पुनर्वास और दीर्घकालिक सुधार के लिए समर्पित है।",
+      "Discover Navkiran Seva Sadan, an affordable Rehab Center in Patna, with an old-age home care, committed to compassionate care, recovery, and overall well-being.",
     url: absoluteUrl("/about"),
     siteName: "https://navkiransevasadan.com/about",
     image: aboutImage,
-    imageAlt: "बिहार नशा मुक्ति सेवा केंद्र और वृद्धाश्रम",
+    imageAlt: "Best Drug Rehab Center in Patna",
     schema: commonSchema,
   },
   nashaMuktiKendra: {
-    title: "विश्वसनीय पटना ड्रग रिहैब सेंटर - नवकिरण सेवा सदन",
+    title: "Nasha Mukti Kendra near me, You Can Trust |Navkiran Seva Sadan",
     description:
-      "नशे की लत से मुक्ति के लिए पटना में भरोसेमंद पटना ड्रग रिहैब सेंटर। काउंसलिंग, डिटॉक्स, पुनर्वास और आफ्टरकेयर सेवाओं के साथ बेहतर जीवन की शुरुआत करें।",
+      "Exploring the best nasha mukti kendra near me. Well, at Navkiran Seva Sadan, we provide safe rehabilitation, 24/7 care, and counseling for lasting recovery. ",
     keywords:
-      "पटना में नशा मुक्ति केंद्र, नशा मुक्ति अस्पताल पटना, पटना ड्रग रिहैब सेंटर",
+      " nasha mukti kendra near me, rehab center in Patna, De addiction Center in Patna, Alcohol Rehab Center near me,  best rehab center near me",
     ogDescription:
-      "नशे की लत से मुक्ति के लिए पटना में भरोसेमंद पटना ड्रग रिहैब सेंटर। काउंसलिंग, डिटॉक्स, पुनर्वास और आफ्टरकेयर सेवाओं के साथ बेहतर जीवन की शुरुआत करें।",
+      "Exploring the best nasha mukti kendra near me. Well, at Navkiran Seva Sadan, we provide safe rehabilitation, 24/7 care, and counseling for lasting recovery. ",
     twitterDescription:
-      "नशे की लत से मुक्ति के लिए पटना में भरोसेमंद पटना ड्रग रिहैब सेंटर। काउंसलिंग, डिटॉक्स, पुनर्वास और आफ्टरकेयर सेवाओं के साथ बेहतर जीवन की शुरुआत करें।",
+      "Exploring the best nasha mukti kendra near me. Well, at Navkiran Seva Sadan, we provide safe rehabilitation, 24/7 care, and counseling for lasting recovery. ",
     url: absoluteUrl("/nasha-mukti-kendra"),
     siteName: "navkiransevasadan.com/nasha-mukti-kendra",
     image: rehabCenterImage,
-    imageAlt: "विश्वसनीय पटना ड्रग रिहैब सेंटर",
+    imageAlt: "Nasha Mukti Kendra near me",
     schema: commonSchema,
   },
   adultHomeCare: {
-    title: "बुजुर्ग देखभाल सेवा एवं उत्कृष्ट पटना नशा इलाज केंद्र",
+    title: "Care for Your Loved Ones with Affordable Old Age Home in Patna",
     description:
-      "पटना में विश्वसनीय वृद्धाश्रम और पटना नशा इलाज केंद्र। नवकिरण सेवा सदन में 24/7 देखभाल, चिकित्सा सहायता, आरामदायक वातावरण और करुणामय सेवा के साथ बुजुर्गों की बेहतर देखभाल।",
-    keywords: "पटना में एडिक्शन काउंसलिंग, पटना नशा इलाज केंद्र",
+      " Provide your elders with the care they deserve. Our affordable old age home in Patna ensures safety, comfort, and compassionate care for a peaceful and respectful life.",
+    keywords: "Affordable old age home in Patna, Senior Citizen Home in Patna, senior care home in Patn",
     ogDescription:
-      "पटना में विश्वसनीय वृद्धाश्रम और पटना नशा इलाज केंद्र। नवकिरण सेवा सदन में 24/7 देखभाल, चिकित्सा सहायता, आरामदायक वातावरण और करुणामय सेवा के साथ बुजुर्गों की बेहतर देखभाल।",
+      " Provide your elders with the care they deserve. Our affordable old age home in Patna ensures safety, comfort, and compassionate care for a peaceful and respectful life.",
     twitterDescription:
-      "पटना में विश्वसनीय वृद्धाश्रम और पटना नशा इलाज केंद्र। नवकिरण सेवा सदन में 24/7 देखभाल, चिकित्सा सहायता, आरामदायक वातावरण और करुणामय सेवा के साथ बुजुर्गों की बेहतर देखभाल।",
+      " Provide your elders with the care they deserve. Our affordable old age home in Patna ensures safety, comfort, and compassionate care for a peaceful and respectful life.",
     url: absoluteUrl("/adult-home-care"),
     siteName: "navkiransevasadan.com/adult-home-care",
     image: adultCareImage,
-    imageAlt: "बुजुर्ग देखभाल सेवा एवं पटना नशा इलाज केंद्र",
+    imageAlt: "Care for Your Loved Ones with Affordable Old Age Home in Patna ",
     schema: commonSchema,
   },
 } satisfies Record<string, SeoProps>;

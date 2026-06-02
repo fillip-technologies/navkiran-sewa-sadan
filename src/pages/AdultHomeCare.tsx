@@ -47,7 +47,7 @@ const AdultHomeCare = () => {
           badge: "Our Care Services",
           title: "Comprehensive Care with Dignity",
           description:
-            "Providing holistic support that addresses both physical and emotional needs while preserving the honour and individuality of every person.",
+            "With our affordable old age home in Patna, you receive holistic support that addresses both physical and emotional needs while preserving the honour and individuality of every person.",
           items: [
             {
               title: "24/7 Personalized Care",
@@ -72,7 +72,7 @@ const AdultHomeCare = () => {
             {
               title: "Nutritious Meals",
               description:
-                "Fresh and well-balanced meals tailored to individual needs and personal preferences.",
+                "Even being the affordable old age home in Patna, everyone receives fresh and well-balanced meals tailored to individual needs and personal preferences.",
             },
             {
               title: "Activities and Companionship",
