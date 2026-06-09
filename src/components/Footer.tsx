@@ -18,47 +18,47 @@ const Footer = () => {
   const content =
     language === "en"
       ? {
-          brand: "Navkiran Seva Sadan",
-          description:
-            "A non-profit organization committed to supporting people in their journey toward recovery, dignity, and a better quality of life.",
-          quickLinks: "Quick Links",
-          links: {
-            home: "Home",
-            about: "About Us",
-            nashaMuktiKendra: "Nasha Mukti Kendra",
-            adultHomeCare: "Old Age Home Care",
-            contact: "Contact Us",
-          },
-          getInTouch: "Get In Touch",
-          supportText:
-            "Reach out to us for support or to learn more about our services.",
-          addressLines: ["Anand bihar colony opposite to bharat petroleum boothnath bypass or near jeevan deep hospital patna -800026"],
-          copyright: "Navkiran Seva Sadan. All rights reserved.",
-          madeWith: "Made with",
-          madeForHumanity: "for humanity.",
-          developedBy: "Developed by Fillip Technologies Pvt. Ltd.",
-        }
+        brand: "Navkiran Seva Sadan",
+        description:
+          "A non-profit organization committed to supporting people in their journey toward recovery, dignity, and a better quality of life.",
+        quickLinks: "Quick Links",
+        links: {
+          home: "Home",
+          about: "About Us",
+          nashaMuktiKendra: "Nasha Mukti Kendra",
+          adultHomeCare: "Old Age Home Care",
+          contact: "Contact Us",
+        },
+        getInTouch: "Get In Touch",
+        supportText:
+          "Reach out to us for support or to learn more about our services.",
+        addressLines: ["Anand bihar colony opposite to bharat petroleum boothnath bypass or near jeevan deep hospital patna -800026"],
+        copyright: "Navkiran Seva Sadan. All rights reserved.",
+        madeWith: "Made with",
+        madeForHumanity: "for humanity.",
+        developedBy: "Developed by Fillip Technologies Pvt. Ltd.",
+      }
       : {
-          brand: "नवकिरण सेवा सदन",
-          description:
-            "एक सेवा संस्था जो लोगों को सुधार, सम्मान और बेहतर जीवन की ओर बढ़ने में सहारा देती है।",
-          quickLinks: "त्वरित लिंक",
-          links: {
-            home: "होम",
-            about: "हमारे बारे में",
-            nashaMuktiKendra: "नशा मुक्ति केंद्र",
-            adultHomeCare: "बुजुर्ग देखभाल सेवा",
-            contact: "संपर्क करें",
-          },
-          getInTouch: "संपर्क में रहें",
-          supportText:
-            "मदद पाने या हमारी सेवाओं के बारे में जानने के लिए हमसे संपर्क करें।",
-          addressLines: ["आनंद बिहार कॉलोनी, भारत पेट्रोलियम के सामने, भूतनाथ बाइपास या जीवन दीप अस्पताल के पास, पटना - 800026"],
-          copyright: "नवकिरण सेवा सदन। सभी अधिकार सुरक्षित।",
-          madeWith: "दिल से",
-          madeForHumanity: "मानवता की सेवा के लिए।",
-          developedBy: "विकसित किया: Fillip Technologies Pvt. Ltd.",
-        };
+        brand: "नवकिरण सेवा सदन",
+        description:
+          "एक सेवा संस्था जो लोगों को सुधार, सम्मान और बेहतर जीवन की ओर बढ़ने में सहारा देती है।",
+        quickLinks: "त्वरित लिंक",
+        links: {
+          home: "होम",
+          about: "हमारे बारे में",
+          nashaMuktiKendra: "नशा मुक्ति केंद्र",
+          adultHomeCare: "बुजुर्ग देखभाल सेवा",
+          contact: "संपर्क करें",
+        },
+        getInTouch: "संपर्क में रहें",
+        supportText:
+          "मदद पाने या हमारी सेवाओं के बारे में जानने के लिए हमसे संपर्क करें।",
+        addressLines: ["आनंद बिहार कॉलोनी, भारत पेट्रोलियम के सामने, भूतनाथ बाइपास या जीवन दीप अस्पताल के पास, पटना - 800026"],
+        copyright: "नवकिरण सेवा सदन। सभी अधिकार सुरक्षित।",
+        madeWith: "दिल से",
+        madeForHumanity: "मानवता की सेवा के लिए।",
+        developedBy: "विकसित किया: Fillip Technologies Pvt. Ltd.",
+      };
 
   return (
     <footer className="bg-foreground text-background">
@@ -180,7 +180,7 @@ const Footer = () => {
                   href="mailto:contact@navkiransewasadan.org"
                   className="transition hover:text-background"
                 >
-                  contact@navkiransewasadan.org
+                  contact@navkiransevasadan.com
                 </a>
               </li>
             </ul>
