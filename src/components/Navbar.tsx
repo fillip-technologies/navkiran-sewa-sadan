@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/context/LanguageContext";
+import navkiranLogo from "@/assets/Navkiran-LOGO-png.png";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -47,18 +48,12 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full hero-gradient flex items-center justify-center">
-              <span className="text-primary-foreground font-serif font-bold text-lg">
-                N
-              </span>
-            </div>
-            <div className="hidden sm:block">
-              <p className="font-serif font-semibold text-lg text-foreground leading-tight">
-                {content.brand}
-              </p>
-              <p className="text-xs text-muted-foreground">{content.tagline}</p>
-            </div>
+          <Link to="/" aria-label="Navkiran Seva Sadan home">
+            <img
+              src={navkiranLogo}
+              alt="Navkiran Seva Sadan"
+              className="h-12 w-auto object-contain md:h-16"
+            />
           </Link>
 
           {/* Desktop Navigation */}

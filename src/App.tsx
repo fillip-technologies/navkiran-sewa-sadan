@@ -8,6 +8,7 @@ import NashaMuktiKendra from "./pages/NashaMuktiKendra";
 import AdultHomeCare from "./pages/AdultHomeCare";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import NavKiran from "./pages/NavKiran";
 import NotFound from "./pages/NotFound";
 import { LanguageProvider } from "@/context/LanguageContext";
 
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/adult-home-care" element={<AdultHomeCare />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/nav-kiran" element={<NavKiran />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

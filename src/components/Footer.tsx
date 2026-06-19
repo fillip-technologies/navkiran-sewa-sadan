@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { PHONE_NUMBER } from "@/constant/contact";
 import { useLanguage } from "@/context/LanguageContext";
+import navkiranLogo from "@/assets/Navkiran-LOGO-png.png";
 
 const Footer = () => {
   const { language } = useLanguage();
@@ -65,14 +66,13 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="md:col-span-1">
-            <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-                <span className="font-serif text-lg font-bold text-primary-foreground">
-                  N
-                </span>
-              </div>
-              <h3 className="font-serif text-lg font-semibold">{content.brand}</h3>
-            </div>
+            <Link to="/" className="mb-4 inline-block" aria-label="Navkiran Seva Sadan home">
+              <img
+                src={navkiranLogo}
+                alt="Navkiran Seva Sadan"
+                className="h-20 w-auto object-contain"
+              />
+            </Link>
             <p className="text-sm leading-relaxed text-background/70">
               {content.description}
             </p>
